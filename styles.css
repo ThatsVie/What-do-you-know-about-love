@@ -1,0 +1,326 @@
+/* Variables */
+:root {
+  --font-family: 'Source Sans Pro', serif;
+  --font-family-secondary: 'Lobster', cursive;
+  --color-bold-pink: #E91E63;   /* Bold Pink */
+  --color-pink: #c06583;
+  --color-light-pink: #FFCCCB;   /* Light Pink */
+  --color-bold-blue: #2196F3;   /* Bold Blue */
+  --color-light-blue: #ADD8E6;   /* Light Blue */
+  --color-white: #FFFFFF;       /* White */
+  --color-light-gray: #9E9E9E;  /* Light Gray */
+  --color-dark-gray: #333333;   /* Dark Gray */
+  --color-green: #4CAF50;       /* Green */
+  --color-tan: #D2B48C;         /* Tan */
+  --color-light-brown: #A0522D; /* Light Brown */
+  --color-medium-brown: #8B4513;/* Medium Brown */
+  --color-dark-brown: #654321;  /* Dark Brown */
+  --color-light-tan: #F5DEB3;   /* Light Tan */
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Styles */
+body {
+  background-color: var(--color-light-tan);
+  color: var(--color-dark-gray);
+  font-family: var(--font-family);
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.form-container,
+.response-container {
+  background-color: var(--);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.burger-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-dark-gray);
+}
+
+/* Text Colors */
+.text-bold-pink {
+  color: var(--color-bold-pink) !important;
+}
+
+.text-pink {
+  color: var(--color-pink) !important;
+}
+
+.text-light-pink {
+  color: var(--color-light-pink) !important;
+}
+
+.text-bold-blue {
+  color: var(--color-bold-blue) !important;
+}
+
+.text-light-blue {
+  color: var(--color-light-blue) !important;
+}
+
+.text-white {
+  color: var(--color-white) !important;
+}
+
+.text-light-gray {
+  color: var(--color-light-gray) !important;
+}
+
+.text-dark-gray {
+  color: var(--color-dark-gray) !important;
+}
+
+.text-green {
+  color: var(--color-green) !important;
+}
+
+.text-tan {
+  color: var(--color-tan) !important;
+}
+
+.text-light-brown {
+  color: var(--color-light-brown) !important;
+}
+
+.text-medium-brown {
+  color: var(--color-medium-brown) !important;
+}
+
+.text-dark-brown {
+  color: var(--color-dark-brown) !important;
+}
+
+.text-light-tan {
+  color: var(--color-light-tan) !important;
+}
+
+/* Background Colors */
+.bg-bold-pink {
+  background-color: var(--color-bold-pink) !important;
+}
+
+.bg-pink {
+  background-color: var(--color-pink) !important;
+}
+
+.bg-light-pink {
+  background-color: var(--color-light-pink) !important;
+}
+
+.bg-bold-blue {
+  background-color: var(--color-bold-blue) !important;
+}
+
+.bg-light-blue {
+  background-color: var(--color-light-blue) !important;
+}
+
+.bg-white {
+  background-color: var(--color-white) !important;
+}
+
+.bg-light-gray {
+  background-color: var(--color-light-gray) !important;
+}
+
+.bg-dark-gray {
+  background-color: var(--color-dark-gray) !important;
+}
+
+.bg-green {
+  background-color: var(--color-green) !important;
+}
+
+.bg-tan {
+  background-color: var(--color-tan) !important;
+}
+
+.bg-light-brown {
+  background-color: var(--color-light-brown) !important;
+}
+
+.bg-medium-brown {
+  background-color: var(--color-medium-brown) !important;
+}
+
+.bg-dark-brown {
+  background-color: var(--color-dark-brown) !important;
+}
+
+.bg-light-tan {
+  background-color: var(--color-light-tan) !important;
+}
+
+.img-height-60{
+  height: 60px;
+}
+
+.rounded-image {
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures any overflow is hidden */
+}
+
+.romanceText {
+  font-family: var(--font-family-secondary);
+}
+
+.nav-linkLove {
+  color: var(--color-dark-gray);
+}
+
+.nav-linkLove:hover {
+  color: var(--color-bold-blue);
+}
+
+/* Header Styles */
+header {
+  background-color: var(--color-bold-pink);
+}
+
+h1 {
+  color: var(--color-white);
+}
+
+h2 {
+  font-family: var(--font-family-secondary);
+  background-color: var(--color-bold-pink);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.bg-black {
+  background-color: var(--color-dark-gray);
+}
+
+.bg-soft {
+  background: var(--color-bold-blue) url(images/soft.png) no-repeat center top / cover;
+}
+
+.bg-soft2 {
+  background: var(--color-bold-blue) url(images/soft2.png) no-repeat center top / cover;
+}
+
+.bg-soft3 {
+  background: var(--color-light-tan) url(images/soft3.png) no-repeat center;
+}
+
+.bg-soft4 {
+  background: var(--color-bold-blue) url(images/soft4.png) no-repeat center;
+}
+
+.bg-soft5 {
+  background: var(--color-bold-blue) url(images/soft5.png) no-repeat center top / cover;
+}
+
+.bg-soft6 {
+  background: var(--color-bold-blue) url(images/soft6.png) no-repeat center top / cover;
+}
+
+.bg-bold {
+  background: var(--color-bold-pink) url(images/bold.png) no-repeat center top / cover;
+}
+
+.bg-bold2 {
+  background: var(--color-bold-pink) url(images/bold2.png) no-repeat center top / cover;
+}
+
+.bg-bold3 {
+  background: var(--color-bold-pink) url(images/bold3.png) no-repeat center top / cover;
+}
+
+
+
+/* Footer Styles */
+footer {
+  background-color: var(--color-bold-pink);
+}
+
+footer a {
+  color: var(--color-white);
+}
+
+footer a:hover {
+  color: var(--color-bold-blue);
+}
+
+.donation-icon {
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
+}
+
+
+.response {
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-title {
+  color: var(--color-bold-pink);
+  font-family: var(--font-family-secondary);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-text {
+  color: var(--color-dark-gray);
+  flex-grow: 1;
+}
+
+
+
+.answer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.answer-container .col-md-4 {
+  flex: 1 0 30%;
+  margin-bottom: 20px;
+}
+
+/* Questions List */
+.questions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.questions-list li {
+  margin-bottom: 10px;
+}
+
+.questions-list a {
+  color: var(--color-bold-blue);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.questions-list a:hover {
+  background-color: var(--color-light-pink);
+  color: var(--color-dark-gray);
+}
