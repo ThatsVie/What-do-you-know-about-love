@@ -9,60 +9,122 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
   <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU/ScQsAP7hUibX39j7W3uD1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
   <!-- Header Section -->
-  <header class="container-fluid text-white">
+  <header class="container-fluid text-white pb-5">
     <div class="container-lg h-100 d-flex flex-column justify-content-between">
       <nav class="d-flex flex-column flex-sm-row pt-4">
-        <!-- Logo Section -->
         <a href="index.html" class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-            <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
+          <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
         </a>
-        <!-- Burger Menu for Mobile -->
         <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle main navigation">
-            <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          
-          
-        <!-- Navigation Links -->
+          <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
         <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="mainNav">
           <ul class="navbar-nav ml-auto flex-sm-row align-items-center font-weight-bold">
             <li class="nav-item">
-              <a class="nav-linkLove text-white mx-5" href="about.html">ABOUT</a>
+              <a class="nav-link text-white mx-2" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-linkLove text-white mx-5" href="submit.html">SUBMIT</a>
+              <a class="nav-link text-white mx-2" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-linkLove text-white mx-5" href="stories.html">LOVE</a>
+              <a class="nav-link text-white mx-2" href="submit.html">SUBMIT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="responses.html">RESPONSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="responses.html#questions-section">QUESTIONS</a>
             </li>
           </ul>
         </div>
       </nav>
-
-      <!-- Hero Section -->
       <div class="position-relative pt-4 pb-5">
-        <h1 class="text-center romanceText" style="font-size: 64px;">What Do You Know About Love?</h1>
+        <a href="index.html" class="no-underline">
+          <h1 class="text-center romanceText">What Do You Know About Love?</h1>
+        </a>
       </div>
     </div>
   </header>
 
-  
+
   <main class="container">
-    <div class="form-container bg-soft2">
+  
+    <div class="responses-preview">
+      <h2 class="text-center text-white">What You Have Told Us about Love</h2>
+      <div class="row" id="responses-preview-container">
+        <div id="answer-2" div class="response-card col-md-4 mt-4 answer-2">
+          <div class="card shadow-lg mb-4 h-100">
+            <img src="images/masks.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a diverse group of eight people standing in a circle, all wearing masks. The background features soft, pastel colors and abstract floral elements, creating a harmonious and serene atmosphere. The individuals represent different genders, and skin tones, highlighting themes of unity, diversity, and safety." style="object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">When have you felt the most loved?</h5>
+              <p class="card-text flex-grow-1">I felt the most loved when my best friend threw a surprise birthday party for me. It was an amazing day filled with laughter, joy, and all the people I care about. Knowing that they took the time and effort to plan everything, purchased and set up air purifiers, and the fact that everyone wore a mask to keep me and themselves safe made me feel incredibly special and loved.</p>
+              <p class="card-text text-bold-pink">Sam 44 They/He Single NYC</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="answer-13" div class="response-card col-md-4 mt-4 answer-13">
+          <div class="card shadow-lg mb-4 h-100">
+            <img src="images/loveheals.png" class="card-img-top img-fluid rounded-top" alt="
+            A stylized illustration of a heart with two band-aids forming an " X" over it, symbolizing healing. The heart is surrounded by vibrant, abstract elements including leaves, flowers, and a flowing blue ribbon. A white butterfly flutters nearby, adding a touch of grace. The background features a warm color palette with shades of pink, tan, and green, evoking feelings of recovery, love, and nature." style="object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">How do you recover and heal from a broken heart?</h5>
+              <p class="card-text flex-grow-1">Healing from a broken heart is a gradual process for me. I allow myself to feel and process the emotions rather than suppressing them. I lean on my support system, my friends and family, who remind me of my worth and keep me company. Engaging in activities I love, like painting and hiking, also helps me find joy and distraction. I practice self-compassion, reminding myself that it's okay to take time to heal and that it's a part of life.</p>
+              <p class="card-text text-bold-pink">Laurie She/They 30s Poly Lesbian</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="answer-9" div class="response-card col-md-4 mt-4 answer-9">
+          <div class="card shadow-lg mb-4 h-100">
+            <img src="images/smartphone.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a smartphone displaying a chat conversation. The phone is surrounded by abstract shapes in shades of blue, pink, and tan, with overlapping leaves and heart elements. The chat bubbles on the screen are in white and shades of blue symbolizing communication and connection. The image evokes feelings of modern digital interaction and connectivity, blending technology with artistic elements." style="object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">How do you nurture love in long-term friendships?</h5>
+              <p class="card-text flex-grow-1">I nurture love in long-term friendships by staying connected, even if it's just through a quick text or phone call. I make an effort to remember important dates and milestones in their lives. I also believe in being there during both good times and bad, offering support and celebrating their achievements. Consistent communication and genuine care are key to maintaining strong, loving friendships.</p>
+              <p class="card-text text-bold-pink">Casey He/Him 37 </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center my-4">
+        <a href="responses.html" class="btn btn-bold-pink">See All Responses</a>
+        <a href="submit.html" class="btn btn-bold-pink">Submit Your Response</a>
+      </div>
+    </div>
+
+    <div class="questions-preview">
+      <h2 class="text-center text-white">What We Have Asked You About Love</h2>
+      <ul class="questions-list" id="questions-preview-container">
+        <li><a class="question-link" href="#answer-container-1" data-target="answer-1">What do you know about love?</a></li>
+        <li><a class="question-link" href="#answer-container-5" data-target="answer-5">How would you define love?</a></li>
+        <li><a class="question-link" href="#answer-container-6" data-target="answer-6">How have your experiences of love evolved over time?</a></li>
+        <li><a class="question-link" href="#answer-container-9" data-target="answer-9">How do you nurture love in long-term friendships?</a></li>
+        <li><a class="question-link" href="#answer-container-15" data-target="answer-15">Do you believe in a spiritual or higher form of love? If so, how do you experience it?</a></li>
+        <li><a class="question-link" href="#answer-container-19" data-target="answer-19">What is the most powerful lesson love has taught you?</a></li>
+      </ul>
+      <div class="text-center my-4">
+        <a href="responses.html#questions-section" class="btn btn-bold-pink">See All Questions</a>
+        <a href="submit.html" class="btn btn-bold-pink">Submit Your Response</a>
+      </div>
+    </div>
+
+    <div class="form-container">
       <h2 class="text-center"></h2>
       <!-- Embed Google Form here -->
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJWRDQGB3w72Ni3hlIljfFhrowOEpHq2USUO0C2hpx1qAqzQ/viewform?embedded=true" width="100%" height="1136" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+
   </main>
 
   <!-- Footer Section -->
@@ -70,10 +132,10 @@
     <div class="container-lg">
       <div class="row align-items-center">
         <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-            <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
+          <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
         </div>
         <div class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
-          
+
           <a href="#"><img src="images/instagram.png" alt="Instagram" class="social-icon mx-2"></a>
           <a href="https://venmo.com/whatdoyouknowaboutlove" target="_blank">
             <img src="images/venmo.png" alt="Donate with Venmo" class="donation-icon">
@@ -83,6 +145,7 @@
       <p class="footer-copyright small text-center mb-0 footer-opacity">© What Do You Know About Love</p>
     </div>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 
 </html>

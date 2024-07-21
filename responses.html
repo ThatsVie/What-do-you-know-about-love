@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Do You Know About Love?</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="container-fluid text-white pb-5">
+    <div class="container-lg h-100 d-flex flex-column justify-content-between">
+      <nav class="d-flex flex-column flex-sm-row pt-4">
+        <a href="index.html" class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+          <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle main navigation">
+          <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="mainNav">
+          <ul class="navbar-nav ml-auto flex-sm-row align-items-center font-weight-bold">
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="submit.html">SUBMIT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="responses.html">RESPONSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="responses.html#questions-section">QUESTIONS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="position-relative pt-4 pb-5">
+        <a href="index.html" class="no-underline">
+          <h1 class="text-center romanceText">What Do You Know About Love?</h1>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Form -->
+  <section class="container my-5">
+    <form id="search-form" class="form-inline mb-4">
+      <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search by keyword" aria-label="Search">
+      <select id="search-question" class="form-control mr-sm-2">
+        <option value="">Select Question</option>
+        <option value="What do you know about love?">What do you know about love?</option>
+        <option value="When have you felt the most loved?">When have you felt the most loved?</option>
+        <option value="What does love feel like?">What does love feel like?</option>
+        <option value="How do you express love to yourself, friends, family, and/or community?">How do you express love to yourself, friends, family, and/or community?</option>
+        <option value="How would you define love?">How would you define love?</option>
+        <option value="How have your experiences of love evolved over time?">How have your experiences of love evolved over time?</option>
+        <option value="What was your first experience of feeling loved?">What was your first experience of feeling loved?</option>
+        <option value="What does unconditional love mean to you, and have you experienced it?">What does unconditional love mean to you, and have you experienced it?</option>
+        <option value="How do you nurture love in long-term friendships?">How do you nurture love in long-term friendships?</option>
+        <option value="How do you handle situations where love is difficult or unreciprocated?">How do you handle situations where love is difficult or unreciprocated?</option>
+        <option value="What lessons have you learned from experiencing heartbreak or loss in love?">What lessons have you learned from experiencing heartbreak or loss in love?</option>
+        <option value="How has your understanding of self-love evolved over time?">How has your understanding of self-love evolved over time?</option>
+        <option value="How do you recover and heal from a broken heart?">How do you recover and heal from a broken heart?</option>
+        <option value="What challenges have you faced in expressing love, and how did you overcome them?">What challenges have you faced in expressing love, and how did you overcome them?</option>
+        <option value="Do you believe in a spiritual or higher form of love? If so, how do you experience it?">Do you believe in a spiritual or higher form of love? If so, how do you experience it?</option>
+        <option value="How does your spirituality or religious beliefs influence your understanding of love?">How does your spirituality or religious beliefs influence your understanding of love?</option>
+        <option value="Can you share a cultural practice related to love that you find beautiful or meaningful?">Can you share a cultural practice related to love that you find beautiful or meaningful?</option>
+        <option value="How has being loved helped you through difficult times?">How has being loved helped you through difficult times?</option>
+        <option value="What is the most powerful lesson love has taught you?">What is the most powerful lesson love has taught you?</option>
+        <option value="What advice would you give to someone struggling to find or feel love?">What advice would you give to someone struggling to find or feel love?</option>
+      </select>
+      <button class="btn my-2 my-sm-0 btn-bold-pink" type="submit">Search</button>
+      <button id="clear-results-button" class="btn my-2 my-sm-0 btn-bold-pink ml-2" type="button">Clear Results</button>
+    </form>
+  </section>
+
+  <!-- Search Results Container -->
+  <section id="search-results-container" class="container my-5 hidden">
+    <h2 class="text-center text-white py-3 rounded mb-5">Search Results</h2>
+    <div class="row" id="search-results">
+      <!-- Search results will go here -->
+    </div>
+  </section>
+
+
+  <!-- Your Submissions -->
+  <section class="container my-5 romanceText">
+    <h2 class="text-center text-white py-3 rounded mb-5">What You Have Told Us About Love</h2>
+
+    <div id="answer-container-1" class="answer-container row"></div>
+    <div id="answer-container-2" class="answer-container row"></div>
+    <div id="answer-container-3" class="answer-container row"></div>
+    <div id="answer-container-4" class="answer-container row"></div>
+    <div id="answer-container-5" class="answer-container row"></div>
+    <div id="answer-container-6" class="answer-container row"></div>
+    <div id="answer-container-7" class="answer-container row"></div>
+    <div id="answer-container-8" class="answer-container row"></div>
+    <div id="answer-container-9" class="answer-container row"></div>
+    <div id="answer-container-10" class="answer-container row"></div>
+    <div id="answer-container-11" class="answer-container row"></div>
+    <div id="answer-container-12" class="answer-container row"></div>
+    <div id="answer-container-13" class="answer-container row"></div>
+    <div id="answer-container-14" class="answer-container row"></div>
+    <div id="answer-container-15" class="answer-container row"></div>
+    <div id="answer-container-16" class="answer-container row"></div>
+    <div id="answer-container-17" class="answer-container row"></div>
+    <div id="answer-container-18" class="answer-container row"></div>
+    <div id="answer-container-19" class="answer-container row"></div>
+    <div id="answer-container-20" class="answer-container row"></div>
+
+    <div class="row">
+
+      <div id="answer-20" div class="response-card col-md-4  mt-4 answer-20">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/chalices.png" class="card-img-top img-fluid rounded-top" alt="An elegant illustration of two chalices, one pink and one blue, with flowing designs and nature elements around them. The chalices are positioned as if pouring into each other, symbolizing unity and harmony. A butterfly hovers above, adding a touch of grace to the scene." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What advice would you give to someone struggling to find or feel love?</h5>
+            <p class="card-text flex-grow-1">Love yourself first, your cup will overflow to the right person when they come into your life!</p>
+            <p class="card-text text-bold-pink">J 32 Female Tulsa, OK</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-2" div class=" response-card col-md-4 mt-4 answer-2">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/clock.png" class="card-img-top img-fluid rounded-top" alt="A highly detailed, ornate clock with Roman numerals, surrounded by intricate floral patterns in shades of pink, blue, and gold. The design is reminiscent of vintage baroque style, with elaborate, swirling motifs that add a touch of elegance and grandeur to the timepiece." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">When have you felt the most loved?</h5>
+            <p class="card-text flex-grow-1">Right at this moment...and this moment...and this moment...and this moment...and this moment...and this moment...and this moment!</p>
+            <p class="card-text text-bold-pink">Una C. She/Her Seasoned Queen</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-3" div class="response-card col-md-4 mt-4 answer-3">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/embrace.png" class="card-img-top img-fluid rounded-top" alt="An abstract illustration of two human figures embracing, depicted in soft, flowing shapes and muted pastel colors of blue and pink. The image conveys a sense of warmth, connection, and tenderness, with the figures' arms gently wrapped around each other in a harmonious and loving gesture." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What does love feel like?</h5>
+            <p class="card-text flex-grow-1">To me, love feels like safety. It feels like being able to be completely vulnerable with your partner without judgement. It feels like a warm hug when you're really sad.</p>
+            <p class="card-text text-bold-pink">Savanna D. 25 Female Bisexual Tulsa, OK</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-2" div class="response-card col-md-4 mt-4 answer-2">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/masks.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a diverse group of eight people standing in a circle, all wearing masks. The background features soft, pastel colors and abstract floral elements, creating a harmonious and serene atmosphere. The individuals represent different genders, and skin tones, highlighting themes of unity, diversity, and safety." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">When have you felt the most loved?</h5>
+            <p class="card-text flex-grow-1">I felt the most loved when my best friend threw a surprise birthday party for me. It was an amazing day filled with laughter, joy, and all the people I care about. Knowing that they took the time and effort to plan everything, purchased and set up air purifiers, and the fact that everyone wore a mask to keep me and themselves safe made me feel incredibly special and loved.</p>
+            <p class="card-text text-bold-pink">Sam 44 They/He Single NYC</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-14" div class="response-card col-md-4 mt-4 answer-14">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/couple.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of two abstract figures embracing, created with bold, geometric shapes and lines. The figures are depicted in shades of blue, pink, and black, with minimalist facial features and smooth, flowing lines. The background includes abstract circular and linear elements, adding to the modern and artistic feel of the image. The illustration conveys themes of love, connection, and intimacy." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What challenges have you faced in expressing love, and how did you overcome them?</h5>
+            <p class="card-text flex-grow-1">As an autistic person, I do struggle to express love because in my head, I just assume you already know and don’t need to say it, but I remind myself all the time to make sure I’m showing that I still love and care for this person. If they hadn’t said anything I wouldn’t have made adjustments. </p>
+            <p class="card-text text-bold-pink">Ben C. He/Him 33 Bisexual Tulsa, OK</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-3" div class="response-card col-md-4 mt-4 answer-3">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/kite.png" class="card-img-top img-fluid rounded-top" alt="A serene illustration of a heart-shaped kite soaring in a clear sky. The kite is divided into sections of blue and pink, symbolizing love and harmony. It is tethered by a delicate string with a small bow, gracefully flying among soft, fluffy clouds. The sun's rays are gently shining, creating a warm and uplifting atmosphere. The image evokes feelings of love, freedom, and joy." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What does love feel like?</h5>
+            <p class="card-text flex-grow-1">Love to me feels most like the feeling where you can be your true authentic self. Love is about being able to heal through traumas. Whether it’s love through someone else or self love. Love is about being able to still stay true to yourself and be able to give yourself love or someone else love without being codependent on another person to satisfy their needs for you to receive their love back.</p>
+            <p class="card-text text-bold-pink">Jordan 23 Female Bisexual</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-8" div class="response-card col-md-4 mt-4 answer-8">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/flawedloved.png" class="card-img-top img-fluid rounded-top" alt="A serene illustration of a cracked vase with a heart-shaped opening, adorned with a blooming flower and surrounded by leaves and hearts, symbolizing the beauty of imperfection and being loved despite flaws." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What does unconditional love mean to you, and have you experienced it?</h5>
+            <p class="card-text flex-grow-1">Unconditional love to me is, quite literally, loving without conditions. That means knowing and accepting the entire person, even with all of their faults or mistakes. It means you won't give up on them or stop loving them no matter what, because we are all humans, and we all have our flaws and make mistakes. I have experienced it and I experience it now, with my partner. Even though he has seen me at my absolute lowest, he accepts it, seeks to understand it, empathizes with me, and loves me anyway.</p>
+            <p class="card-text text-bold-pink">Courtney 33 Cis Female Tulsa, OK</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-9" div class="response-card col-md-4 mt-4 answer-9">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/smartphone.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a smartphone displaying a chat conversation. The phone is surrounded by abstract shapes in shades of blue, pink, and tan, with overlapping leaves and heart elements. The chat bubbles on the screen are in white and shades of blue symbolizing communication and connection. The image evokes feelings of modern digital interaction and connectivity, blending technology with artistic elements." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How do you nurture love in long-term friendships?</h5>
+            <p class="card-text flex-grow-1">I nurture love in long-term friendships by staying connected, even if it's just through a quick text or phone call. I make an effort to remember important dates and milestones in their lives. I also believe in being there during both good times and bad, offering support and celebrating their achievements. Consistent communication and genuine care are key to maintaining strong, loving friendships.</p>
+            <p class="card-text text-bold-pink">Casey He/Him 37 </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-13" div class="response-card col-md-4 mt-4 answer-13">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/loveheals.png" class="card-img-top img-fluid rounded-top" alt="
+          A stylized illustration of a heart with two band-aids forming an " X" over it, symbolizing healing. The heart is surrounded by vibrant, abstract elements including leaves, flowers, and a flowing blue ribbon. A white butterfly flutters nearby, adding a touch of grace. The background features a warm color palette with shades of pink, tan, and green, evoking feelings of recovery, love, and nature." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How do you recover and heal from a broken heart?</h5>
+            <p class="card-text flex-grow-1">Healing from a broken heart is a gradual process for me. I allow myself to feel and process the emotions rather than suppressing them. I lean on my support system, my friends and family, who remind me of my worth and keep me company. Engaging in activities I love, like painting and hiking, also helps me find joy and distraction. I practice self-compassion, reminding myself that it's okay to take time to heal and that it's a part of life.</p>
+            <p class="card-text text-bold-pink">Laurie She/They 30s Poly Lesbian</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-11" div class="response-card col-md-4 mt-4 answer-11">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/healingheart.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a heart with cracks, symbolizing healing and resilience. The heart is surrounded by lush flowers, leaves, and abstract elements, with a radiant sunburst shining from behind. A flowing wave-like design is present at the bottom, adding a sense of movement. The background features a warm color palette with shades of pink, blue, and green, evoking feelings of recovery, love, and nature." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What lessons have you learned from experiencing heartbreak or loss in love?</h5>
+            <p class="card-text flex-grow-1">I've learned that love, even when it ends in heartbreak, is worth experiencing. It teaches us resilience and the capacity to deeply connect with others. Heartbreak has shown me the importance of cherishing moments and expressing love openly. It's also taught me the value of self-love and finding strength within myself. Healing comes with time, and with it, a renewed appreciation for the beauty of love and life.</p>
+            <p class="card-text text-bold-pink">Terry 67 Retired Nurse Texas</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-7" div class="response-card col-md-4 mt-4 answer-7">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/barber.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration featuring a pink heart surrounded by white stars and blue and white leafy branches. Below the heart, there are a pair of scissors and a comb, symbolizing love and the barber profession. The background has a soft color palette with shades of pink and blue evoking feelings of care, craftsmanship, and affection." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What was your first experience of feeling loved?</h5>
+            <p class="card-text flex-grow-1">My first experience of feeling loved was when I was in foster care and had a really devoted social worker. She went beyond her job to show me support and kindness. She would get me clothes that I actually liked and matched my style making me feel seen and understood in a way I hadn't felt before. She got me books and recommended movies that broadened my understanding of the world and showed me that there was more to life than what I had known. She also encouraged me to pursue becoming a barber, recognizing my potential and passion. She made me feel valued and loved for the first time in my life.</p>
+            <p class="card-text text-bold-pink">Ty 27 He/Him Trans Aromantic Mexican-American</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-8" div class="response-card col-md-4 mt-4 answer-8">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/puglove.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a joyful pug with a happy expression, surrounded by colorful abstract trees and shapes. The background features vibrant rays of light in shades of blue, pink, green, and tan, creating a lively and cheerful atmosphere. The overall image conveys a sense of happiness, playfulness, and love for the pug." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What does unconditional love mean to you, and have you experienced it?</h5>
+            <p class="card-text flex-grow-1">Unconditional love means a bond that transcends circumstances, faults, and failures. It’s a love that remains steadfast and unwavering no matter what happens. I have never felt this kind of love from another person, but I have experienced it with my service dog, Patrick. Patrick has been my constant companion, and his love for me is pure and unconditional. He knows when I’m sad and instinctively knows how to make me feel better. Taking care of him has given me a reason to persevere and has kept me from spiraling into dark depression. Patrick has taught me how to take care of myself better, and even when I don’t have the energy for a long walk, he is just happy to be by my side. His love has shown me what it means to be loved without conditions, and for that, I am deeply grateful.</p>
+            <p class="card-text text-bold-pink">RJ 25 She/Her NYC</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-2" div class="response-card col-md-4 mt-4 answer-2">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/blackandbeautiful.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a large Black man and a Black woman sitting happily on the beach. Both are wearing swimwear, with the man shirtless and the woman in a swimsuit. They are smiling and enjoying each other's company as the sun sets in the background, casting a warm, serene glow over the ocean. The image conveys a sense of relaxation, love, and body positivity." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">When have you felt the most loved?</h5>
+            <p class="card-text flex-grow-1">I felt the most loved last weekend at the beach with my wife. It was a day that started like many others, with my usual reluctance to take off my shirt and expose my chest. For years I've struggled with feeling comfortable in my own skin, especially because of my size. But my wife, my incredible partner, reminded me just how much she loves every part of me. She told me how safe and protected she feels with me because of my size, how handsome I am, and how much she cherishes our life together. Her words were like a balm to my soul, soothing the insecurities that have plagued me for so long.
+              <br>
+              <br>The beach itself held a special significance that day. My grandmother, who passed away recently, had always been afraid of water. I thought about her and also about my brother, who drowned when we were kids. Standing by the water, I felt a profound connection to my ancestors who perished in the ocean's depths. In my grief for my grandmother and the memories of my brother, I felt an overwhelming surge of God's love. Despite all the pain and suffering in the world, I feel blessed to be alive, to have a loving home, a devoted wife, and a strong body that has carried me through so much. It was in that moment, surrounded by the vastness of the ocean, the greatness of God, and the warmth of my wife's love, that I truly felt the most loved.
+            </p>
+            <p class="card-text text-bold-pink">Robert He/Him Black Straight Married Florida</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-16" div class="response-card col-md-4 mt-4 answer-16">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/trans.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration featuring the transgender symbol with a heart in the center, overlaid on a transgender pride flag with colors pink, blue, and white. Two hands with intricate tattoos and painted nails reach up towards the symbol, with light rays and plants surrounding the scene. The image conveys themes of love, acceptance, and pride within the transgender community." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How does your spirituality or religious beliefs influence your understanding of love?</h5>
+            <p class="card-text flex-grow-1">My spirituality and religious beliefs have been a journey from fear to love. Growing up in Texas, I was taught about a punishing God, one who didn't accept or love me because of my transness. This upbringing filled me with shame and fear, making me feel unworthy of love. Since I began transitioning, I've been on a path of unlearning that doctrine and cultivating a relationship with a loving God. <br> <br>
+              It's been a challenging journey, but I've come to understand that true love is not about condemnation but about acceptance and compassion. This new understanding of a loving God gives me hope that love is available to me just as I am. I've learned that spirituality doesn't have to be tied to the harsh judgments I grew up with. Instead, it's about finding peace and love within myself and with those around me.<br> <br>
+              While the church wasn't always a loving place for me, I've found love and acceptance in other communities. My friends in the gaming community and my trans support group have shown me what true, unconditional love looks like. Their support and kindness have been instrumental in helping me redefine my spirituality and embrace a God who loves me for who I am. This evolving belief in a loving God influences my understanding of love by reminding me that I am deserving of it, and that love is about acceptance, support, and compassion.</p>
+            <p class="card-text text-bold-pink">Eli She/Her 40s Trans Woman Divorced Texas</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-15" div class="response-card col-md-4 mt-4 answer-15">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/12step.png" class="card-img-top img-fluid rounded-top" alt="A serene and elegant illustration of a 12-step meeting. The scene shows a diverse group of people seated in a circle within a spacious room, bathed in soft natural light. The room features large arched windows, a flag, and the number 12 symbol, emphasizing the supportive and inclusive atmosphere. The color scheme includes shades of pink, blue, and white, creating a harmonious and calming effect. Some attendees are wearing masks, reflecting a consideration for health and safety. The image conveys themes of community, support, and recovery." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Do you believe in a spiritual or higher form of love? If so, how do you experience it?</h5>
+            <p class="card-text flex-grow-1">My journey through recovery has taught me a lot about love and a higher power. As part of a 12-step program, I’ve come to understand God in my own way, which I choose to call Love. The love I feel from the fellowship, the support and understanding from others who have walked similar paths, and the love I feel from simple things like the sun rising and setting each day all of this is proof of God's presence for me. <br> <br>
+              Despite surviving so many horrible experiences in active addiction, I am still here, still standing. That in itself is a testament to something bigger than myself. I've learned that things always seem to work out in the end, not because I'm so great or lucky, but because of this greater love that holds me. It's a humbling realization that something greater than me loves me, and that love has carried me through my darkest times.</p>
+            <p class="card-text text-bold-pink">Alex They/Them Practicing Celibacy </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-1" div class="response-card col-md-4 mt-4 answer-1">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/mother.png" class="card-img-top img-fluid rounded-top" alt="A serene and elegant illustration of a mother cradling her baby. The figures are stylized with smooth lines and soft colors, creating a calming and tender scene. The mother is depicted with her eyes closed, conveying a sense of peace and affection, while the baby rests comfortably in her arms. The background features gentle, muted tones, enhancing the overall warmth and intimacy of the image." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What do you know about love?</h5>
+            <p class="card-text flex-grow-1">What do I know about love? Honestly, not much, at least not the kind of love that's healthy and nurturing. Growing up love seemed more like a transaction, something you had to earn by sacrificing parts of yourself. My relationships with men were always about doing whatever it took to make them stay, even if it meant losing myself in the process. But they always left anyway, and I was left feeling empty and used. <br> <br>
+              My mother was the same. I watched her date abusive men who took advantage of her, and in turn, she neglected me. I never felt like I was enough or deserving of real love. But now, as a new mom, things are starting to change. The father of my child is incarcerated, and I wasn't planning on raising my baby alone. My mother, despite our troubled past, has moved in to help me. She's sharing more about herself, her own struggles and regrets, and we're slowly building a new relationship.<br> <br>
+              I’m learning that love isn’t about sacrificing yourself for someone else. It’s about being there, truly being present and supportive. I don’t want my child to grow up with the same patterns I did. I want her to know unconditional love, the kind that doesn’t come with strings attached or a fear of being left behind. I'm still figuring it out, but I know that real love should make you feel safe, valued, and understood. That's the kind of love I want to give my child, and maybe one day, I’ll fully understand and feel it for myself too.</p>
+            <p class="card-text text-bold-pink">Marie She/Her Mother NJ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-6" div class="response-card col-md-4 mt-4 answer-6">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/leaves.png" class="card-img-top img-fluid rounded-top" alt="A serene and elegant illustration of a variety of plants and leaves growing harmoniously. The foliage is depicted in a stylized manner, with shades of pink, blue, green, and white, creating a balanced and calming composition. The background features a large circular shape, suggesting the sun or moon, and a few clouds, adding to the tranquil and natural atmosphere of the scene." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How have your experiences of love evolved over time?</h5>
+            <p class="card-text flex-grow-1">Love has become much simpler for me as I've aged. I used to think love was all about the grand gestures, the excitement, the passion. I made a lot of mistakes chasing those fleeting moments, and in the process, I caused harm to my children and was harmed by my husbands. Love seemed so complicated back then, and I often lost myself trying to keep up with what I thought love should be. <br> <br>
+              Now I realize that love is much simpler than I ever understood. It’s about being present, truly being there for the people you care about. Be here now. Always. Over and over. Don’t bend over backwards too much. Don’t lie. Don’t cheat. Be honest. Keep it simple. Life is already complicated enough.<br> <br>
+              I’ve learned to value honesty and consistency over anything else. I've made amends for the harm I've caused and I strive to do better every day. I’m grateful for my age because it has given me the perspective to not care as much about what other people think. I focus on being myself and being true to those I love. When you make mistakes, you make amends and you don't repeat them. That’s the essence of love for me now. It’s about being genuine, being accountable, and being present. Love is simple if you let it be.</p>
+            <p class="card-text text-bold-pink">Theresa R. 71 Widow Grandmother</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-19" div class="response-card col-md-4 mt-4 answer-19">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/interabled.png" class="card-img-top img-fluid rounded-top" alt="A serene and elegant illustration of three people with diverse skin tones and body abilities. The central figure is a woman in a wheelchair, being affectionately embraced by two individuals standing on either side. The scene is set against a backdrop of stylized plants and flowers in shades of pink, blue, and tan, with birds flying in the background. The image conveys a sense of support, love, and inclusivity." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What is the most powerful lesson love has taught you?</h5>
+            <p class="card-text flex-grow-1">The most powerful lesson love has taught me is the strength found in patience and resilience. My relationship with T and A has shown me the depths of understanding and support that love can provide, even when the world seems against us. Love has taught me to embrace the complexities of life, whether it's fighting for disability rights, racial equality, or queer rights. Our love feels radical and political, and though my family doesn't support our choices, the unwavering support of my friends keeps me grounded. Caring for A and pursuing my dreams of becoming a therapist have taught me that love is about dedication, empathy, and the courage to stand by those you care for, no matter the challenges. Love has made me stronger and more compassionate, and it's shown me that true love is a powerful force for change and growth.</p>
+            <p class="card-text text-bold-pink">K She/Her Black Woman in an interabled interracial poly relationship Colorado</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-10" div class="response-card col-md-4 mt-4 answer-10">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/bluepinkwings.png" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a heart formed by intricate, swirling patterns in shades of blue and pink. The design features leaf-like elements and dots, creating a balanced and harmonious shape that symbolizes love and unity. The use of blue and pink adds a vibrant and dynamic touch to the image." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How do you handle situations where love is difficult or unreciprocated?</h5>
+            <p class="card-text flex-grow-1">I focus on becoming a better person and pray for the day my children might be open to a relationship. I understand the harm I've caused and respect their need for distance. I love them, miss them, and hold onto hope for the future.</p>
+            <p class="card-text text-bold-pink">Kevin 55 Divorced Father </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-3" div class="response-card col-md-4 mt-4 answer-3">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/sun.png" class="card-img-top img-fluid rounded-top" alt="
+          A serene and elegant illustration of a winter landscape with a bright, radiant sun rising or setting on the horizon. The sun's rays stretch across the sky, illuminating the snow-covered hills and a lone path that leads into the distance. Bare trees stand on one side of the path, adding to the tranquil and peaceful atmosphere of the scene. The color palette includes soft blues, pinks, and warm golden hues, evoking a sense of calm and hope." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What does love feel like?</h5>
+            <p class="card-text flex-grow-1">Love feels like the warmth of the sun on your face on a chilly morning. It’s that sense of safety and comfort, like coming home after a long trip. </p>
+            <p class="card-text text-bold-pink">Alex K. 35 They/Them Nonbinary Pansexual In a Polyamorous relationship Korean-American Austin, TX</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-5" div class="response-card col-md-4 mt-4 answer-5">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/garden.png" class="card-img-top img-fluid rounded-top" alt="
+          A serene and elegant illustration of a diverse garden filled with various plants and flowers. The garden features tall palm trees, lush greenery, and an array of colorful blossoms including pink, blue, and white flowers. The backdrop includes a softly striped horizon in pastel shades of pink, blue, and white, enhancing the tranquil and harmonious atmosphere. The overall scene evokes a sense of peacefulness and natural beauty." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How would you define love?</h5>
+            <p class="card-text flex-grow-1">Love is like a garden that requires nurturing, patience, and care. Just as a gardener tends to the plants, watering them and protecting them from harm, love flourishes when we invest time, effort, and tenderness. Over time, this garden blooms with vibrant flowers and fruits, symbolizing the beauty and rewards of a well-tended relationship.</p>
+            <p class="card-text text-bold-pink">Missy 18 She/Her West Virginia</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-11" div class="response-card col-md-4 mt-4 answer-11">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/library.png" class="card-img-top img-fluid rounded-top" alt="A serene and elegant illustration of a man and woman wearing glasses and face masks in a library. They are standing close together, each holding an open book and reading. The library setting features shelves filled with books in the background, soft lighting from overhead lamps, and a large window providing natural light. The atmosphere is calm and studious, emphasizing safety and shared learning in a quiet environment." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What lessons have you learned from experiencing heartbreak or loss in love?</h5>
+            <p class="card-text flex-grow-1">Heartbreak and loss have been tough for me. For a long time I felt like a disappointment and struggled to connect with others. Being rejected after dates left me feeling lost and questioning my worth. Over time, though, I've learned that it's okay to be myself and that I don't have to be right for everyone. I realized that the right person will appreciate me for who I am. Meeting David, who understands and accepts me, has taught me that past pain and loss were part of my journey towards self-acceptance and finding true love. Now I know that being myself is enough and that the right person will come along who values and understands me.</p>
+            <p class="card-text text-bold-pink">SJ She/Her Autistic Seattle, WA</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="answer-20" div class="response-card col-md-4 mt-4 answer-20">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/lovepeople.png" class="card-img-top img-fluid rounded-top" alt="A serene and elegant illustration depicting a group of diverse people holding hands in front of a large, stylized heart. The heart is adorned with leaves, branches, and small hearts in shades of pink, blue, green, and white. The background features additional heart motifs and flowing lines, symbolizing unity, love, and togetherness. The image emphasizes diversity and connection, with individuals of various colors standing together in harmony." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">What advice would you give to someone struggling to find or feel love?</h5>
+            <p class="card-text flex-grow-1">Finding love can sometimes feel elusive, especially when you're struggling to feel it within yourself. Start by focusing on self-love, embracing your unique qualities, and practicing self-compassion. Understand your worth and radiate that confidence outward. Be patient, as love often arrives when you least expect it, and trust that it will find you when the time is right. Surround yourself with supportive friends and family who uplift you, and engage in activities that bring you joy. Doing things you love will make you happier and more fulfilled. Open up and be vulnerable, allowing others to see and love the real you. If you're struggling with feelings of unworthiness or past traumas, consider seeking help from a therapist, as professional guidance can help you work through issues that may be blocking you from experiencing love.</p>
+            <p class="card-text text-bold-pink">Maya 29 She/Her Bisexual Single Seattle, WA</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="answer-18" div class="response-card col-md-4 mt-4 answer-18">
+        <div class="card shadow-lg mb-4 h-100">
+          <img src="images/aidsribbon.png" class="card-img-top img-fluid rounded-top" alt="An elegant and serene illustration featuring a red ribbon, symbolizing AIDS awareness, framed by angel wings. Below the ribbon are lit candles, surrounded by floral elements, with a halo above, creating a sense of remembrance and reverence. The background is a calming blue with soft, radiant light, enhancing the image's theme of hope, love, and tribute to those affected by AIDS." style="object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How has being loved helped you through difficult times?</h5>
+            <p class="card-text flex-grow-1">Being loved has been a beacon of light in my darkest times. Losing so many friends to AIDS in the 80s and 90s left deep scars, and the loss of many elders to Covid in 2020 reopened those wounds. Now, grappling with health troubles from long Covid, I often find myself overwhelmed. But my husband's unwavering love and support keep me going. His care and concern remind me that I'm not alone in this battle. Our shared moments of tenderness and understanding provide solace and strength. The love from my community, friends, and my partner has been a lifeline, giving me hope and resilience to face each day despite the challenges. It’s this love that has carried me through the toughest times, reminding me of the beauty and strength in human connection.</p>
+            <p class="card-text text-bold-pink">J.P. 68 He/Him Gay Married Man Chicago, IL</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Questions Section -->
+  <section id="questions-section" class="container my-5 text-center romanceText">
+    <h2 class="text-center text-white py-3 rounded mb-5">Questions</h2>
+    <ul class="questions-list">
+      <li><a class="question-link" href="#answer-container-1" data-target="answer-1">What do you know about love?</a></li>
+      <li><a class="question-link" href="#answer-container-2" data-target="answer-2">When have you felt the most loved?</a></li>
+      <li><a class="question-link" href="#answer-container-3" data-target="answer-3">What does love feel like?</a></li>
+      <li><a class="question-link" href="#answer-container-4" data-target="answer-4">How do you express love to yourself, friends, family, and/or community?</a></li>
+      <li><a class="question-link" href="#answer-container-5" data-target="answer-5">How would you define love?</a></li>
+      <li><a class="question-link" href="#answer-container-6" data-target="answer-6">How have your experiences of love evolved over time?</a></li>
+      <li><a class="question-link" href="#answer-container-7" data-target="answer-7">What was your first experience of feeling loved?</a></li>
+      <li><a class="question-link" href="#answer-container-8" data-target="answer-8">What does unconditional love mean to you, and have you experienced it?</a></li>
+      <li><a class="question-link" href="#answer-container-9" data-target="answer-9">How do you nurture love in long-term friendships?</a></li>
+      <li><a class="question-link" href="#answer-container-10" data-target="answer-10">How do you handle situations where love is difficult or unreciprocated?</a></li>
+      <li><a class="question-link" href="#answer-container-11" data-target="answer-11">What lessons have you learned from experiencing heartbreak or loss in love?</a></li>
+      <li><a class="question-link" href="#answer-container-12" data-target="answer-12">How has your understanding of self-love evolved over time?</a></li>
+      <li><a class="question-link" href="#answer-container-13" data-target="answer-13">How do you recover and heal from a broken heart?</a></li>
+      <li><a class="question-link" href="#answer-container-14" data-target="answer-14">What challenges have you faced in expressing love, and how did you overcome them?</a></li>
+      <li><a class="question-link" href="#answer-container-15" data-target="answer-15">Do you believe in a spiritual or higher form of love? If so, how do you experience it?</a></li>
+      <li><a class="question-link" href="#answer-container-16" data-target="answer-16">How does your spirituality or religious beliefs influence your understanding of love?</a></li>
+      <li><a class="question-link" href="#answer-container-17" data-target="answer-17">Can you share a cultural practice related to love that you find beautiful or meaningful?</a></li>
+      <li><a class="question-link" href="#answer-container-18" data-target="answer-18">How has being loved helped you through difficult times?</a></li>
+      <li><a class="question-link" href="#answer-container-19" data-target="answer-19">What is the most powerful lesson love has taught you?</a></li>
+      <li><a class="question-link" href="#answer-container-20" data-target="answer-20">What advice would you give to someone struggling to find or feel love?</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="container-fluid text-white pt-5 pb-4">
+    <div class="container-lg">
+      <div class="row align-items-center">
+        <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+          <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
+        </div>
+        <div class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
+
+          <a href="#"><img src="images/instagram.png" alt="Instagram" class="social-icon mx-2"></a>
+          <a href="https://venmo.com/whatdoyouknowaboutlove" target="_blank">
+            <img src="images/venmo.png" alt="Donate with Venmo" class="donation-icon">
+          </a>
+        </div>
+      </div>
+      <p class="footer-copyright small text-center mb-0 footer-opacity">© What Do You Know About Love</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

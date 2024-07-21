@@ -48,6 +48,9 @@ body {
   color: var(--color-dark-gray);
 }
 
+.font-18 {
+  font-size: 18px;
+}
 /* Text Colors */
 .text-bold-pink {
   color: var(--color-bold-pink) !important;
@@ -175,12 +178,13 @@ body {
   font-family: var(--font-family-secondary);
 }
 
-.nav-linkLove {
-  color: var(--color-dark-gray);
+.nav-link {
+  color: var(--color-white) !important;
+  font-weight: bold; /* Ensure font weight is bold */
 }
 
-.nav-linkLove:hover {
-  color: var(--color-bold-blue);
+.nav-link:hover {
+  color: var(--color-bold-blue) !important;
 }
 
 /* Header Styles */
@@ -284,10 +288,12 @@ footer a:hover {
 }
 
 .card-text {
+  font-family: 'Source Sans Pro', serif;
   color: var(--color-dark-gray);
-  flex-grow: 1;
+  line-height: 1.6;
+  flex-grow: 1; 
 }
-
+  
 
 
 .answer-container {
@@ -323,4 +329,26 @@ footer a:hover {
 .questions-list a:hover {
   background-color: var(--color-light-pink);
   color: var(--color-dark-gray);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-bold-pink {
+  color: var(--color-bold-pink);
+  border-color: color: var(--color-bold-pink);
+}
+
+.btn-bold-pink:hover {
+  background-color: var(--color-bold-pink);
+  color: white;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: none;
 }
