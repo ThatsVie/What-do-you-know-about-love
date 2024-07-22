@@ -2,10 +2,11 @@
 :root {
   --font-family: 'Source Sans Pro', serif;
   --font-family-secondary: 'Lobster', cursive;
-  --color-bold-pink: #E91E63;   /* Bold Pink */
+  --color-bold-pink: #C81450;   /* Bold Pink */
   --color-pink: #c06583;
+  --color-darker-pink: #610A27;
   --color-light-pink: #FFCCCB;   /* Light Pink */
-  --color-bold-blue: #2196F3;   /* Bold Blue */
+  --color-bold-blue: #063D6A;   /* Bold Blue */
   --color-light-blue: #ADD8E6;   /* Light Blue */
   --color-white: #FFFFFF;       /* White */
   --color-light-gray: #9E9E9E;  /* Light Gray */
@@ -170,8 +171,8 @@ body {
 }
 
 .rounded-image {
-  border-radius: 50%; /* Makes the image circular */
-  overflow: hidden; /* Ensures any overflow is hidden */
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .romanceText {
@@ -180,11 +181,14 @@ body {
 
 .nav-link {
   color: var(--color-white) !important;
-  font-weight: bold; /* Ensure font weight is bold */
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .nav-link:hover {
-  color: var(--color-bold-blue) !important;
+  background-color: var(--color-bold-blue); /* Change background on hover */
+  color: var(--color-light-blue); /* Change text color on hover */
+  border-color: var(--color-bold-blue); /* Change border color on hover */
 }
 
 /* Header Styles */
@@ -202,6 +206,11 @@ h2 {
   border-radius: 10px;
   padding: 1rem;
 }
+
+h3.card-title {
+  font-size: 20px;
+}
+
 .bg-black {
   background-color: var(--color-dark-gray);
 }
@@ -215,7 +224,7 @@ h2 {
 }
 
 .bg-soft3 {
-  background: var(--color-light-tan) url(images/soft3.png) no-repeat center;
+  background: var(--color-light-tan) url(images/soft3.png) no-repeat center top / cover;
 }
 
 .bg-soft4 {
@@ -295,7 +304,6 @@ footer a:hover {
 }
   
 
-
 .answer-container {
   display: flex;
   flex-wrap: wrap;
@@ -317,7 +325,7 @@ footer a:hover {
 }
 
 .questions-list a {
-  color: var(--color-bold-blue);
+  color: var(--color-darker-pink);
   font-size: 1.1rem;
   text-decoration: none;
   padding: 0.5rem;
@@ -327,8 +335,8 @@ footer a:hover {
 }
 
 .questions-list a:hover {
-  background-color: var(--color-light-pink);
-  color: var(--color-dark-gray);
+  background-color: var(--color-bold-blue);
+  color: var(--color-light-blue);
 }
 
 .hidden {
@@ -336,14 +344,26 @@ footer a:hover {
 }
 
 .btn-bold-pink {
-  color: var(--color-bold-pink);
-  border-color: color: var(--color-bold-pink);
+  color: var(--color-darker-pink);
+  border: 2px solid var(--color-darker-pink); /* Set border width and color */
+  background-color: transparent; /* Transparent background to highlight border */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Add padding for better click area */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s; /* Smooth transition for hover effect */
 }
 
 .btn-bold-pink:hover {
-  background-color: var(--color-bold-pink);
-  color: white;
+  background-color: var(--color-bold-blue); /* Change background on hover */
+  color: var(--color-light-blue); /* Change text color on hover */
+  border-color: var(--color-bold-blue); /* Change border color on hover */
 }
+
 
 .no-underline {
   text-decoration: none;
