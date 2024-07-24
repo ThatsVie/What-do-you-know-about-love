@@ -5,6 +5,7 @@
   --color-bold-pink: #C81450;   /* Bold Pink */
   --color-pink: #c06583;
   --color-darker-pink: #610A27;
+  --color-bolder-pink: #A71143;
   --color-light-pink: #FFCCCB;   /* Light Pink */
   --color-bold-blue: #063D6A;   /* Bold Blue */
   --color-light-blue: #ADD8E6;   /* Light Blue */
@@ -63,6 +64,14 @@ body {
 
 .text-light-pink {
   color: var(--color-light-pink) !important;
+}
+
+.text-darker-pink {
+  color: var(--color-darker-pink) !important;
+}
+
+.text-bolder-pink {
+  color: var(--color-bolder-pink)
 }
 
 .text-bold-blue {
@@ -186,9 +195,9 @@ body {
 }
 
 .nav-link:hover {
-  background-color: var(--color-bold-blue); /* Change background on hover */
-  color: var(--color-light-blue); /* Change text color on hover */
-  border-color: var(--color-bold-blue); /* Change border color on hover */
+  background-color: var(--color-bold-blue); 
+  color: var(--color-light-blue);
+  border-color: var(--color-bold-blue);
 }
 
 /* Header Styles */
@@ -371,4 +380,15 @@ footer a:hover {
 
 .no-underline:hover {
   text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

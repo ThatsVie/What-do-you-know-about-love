@@ -21,7 +21,7 @@
     <div class="container-lg h-100 d-flex flex-column justify-content-between">
       <nav class="d-flex flex-column flex-sm-row pt-4">
         <a href="index.html" class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-          <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
+          <img class="m-2" src="images/lovelogo.png" alt="logo-Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
         </a>
         <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle main navigation">
           <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,21 @@
 
 
   <main class="container">
-  
+
+    <div id="about" class="about-container bg-light p-4 rounded shadow-sm">
+      <h2 class="text-center text-white mb-4 romanceText" tabindex="0">Welcome</h2>
+      <p class="lead text-center">
+        At <span class="romanceText">What Do You Know About Love?</span> we celebrate the diversity and beauty of love in all its forms. Our platform invites individuals to share their personal experiences and perspectives on love through a simple Google Form. Participants select a question about love, provide their answers, and optionally include identifiers for context. We then format these responses into visually appealing response cards, enhanced with custom images. Explore the many facets of love shared by people from all walks of life and find inspiration in their wisdom and experiences.
+      </p>
+
+
+    </div>
+
+    <div class="text-center my-4">
+      <a href="about.html" class="btn btn-bold-pink">Learn More About Us</a>
+      <a href="submit.html" class="btn btn-bold-pink">Submit a Response</a>
+    </div>
+
     <div class="responses-preview">
       <h2 class="text-center text-white" tabindex="0">What You Have Told Us about Love</h2>
       <div class="row" id="responses-preview-container">
@@ -100,64 +114,42 @@
       </div>
       <div class="text-center my-4">
         <a href="responses.html" class="btn btn-bold-pink">See All Responses</a>
-        <a href="submit.html" class="btn btn-bold-pink">Submit Your Response</a>
+        <a href="responses.html#questions-section" class="btn btn-bold-pink">See All Questions</a>
+        <a href="submit.html" class="btn btn-bold-pink">Submit a Response</a>
       </div>
     </div>
 
-    <div class="questions-preview">
-      <h2 class="text-center text-white" tabindex="0">What We Have Asked You About Love</h2>
-      <ul class="questions-list romanceText" id="questions-preview-container">
-        <li><a class="question-link" href="#answer-container-1" data-target="answer-1">What do you know about love?</a></li>
-        <li><a class="question-link" href="#answer-container-5" data-target="answer-5">How would you define love?</a></li>
-        <li><a class="question-link" href="#answer-container-6" data-target="answer-6">How have your experiences of love evolved over time?</a></li>
-        <li><a class="question-link" href="#answer-container-9" data-target="answer-9">How do you nurture love in long-term friendships?</a></li>
-        <li><a class="question-link" href="#answer-container-15" data-target="answer-15">Do you believe in a spiritual or higher form of love? If so, how do you experience it?</a></li>
-        <li><a class="question-link" href="#answer-container-19" data-target="answer-19">What is the most powerful lesson love has taught you?</a></li>
-      </ul>
-      <div class="text-center my-4">
-        <a href="responses.html#questions-section" class="btn btn-bold-pink">See All Questions</a>
-        <a href="submit.html" class="btn btn-bold-pink">Submit Your Response</a>
-      </div>
-    </div>
 
     <div class="form-container">
       <h2 class="text-center text-white" tabindex="0">Submit a Response</h2>
       <!-- Embed Google Form here -->
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdJWRDQGB3w72Ni3hlIljfFhrowOEpHq2USUO0C2hpx1qAqzQ/viewform?embedded=true"
-        width="100%"
-        height="1136"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Google Form to submit responses"
-      >
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJWRDQGB3w72Ni3hlIljfFhrowOEpHq2USUO0C2hpx1qAqzQ/viewform?embedded=true" width="100%" height="1136" frameborder="0" marginheight="0" marginwidth="0" title="Google Form to submit responses">
         Loading…
       </iframe>
     </div>
-    
+
 
   </main>
 
   <!-- Footer Section -->
-<footer class="container-fluid text-white pt-5 pb-4">
-  <div class="container-lg">
-    <div class="row align-items-center">
-      <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-        <a href="index.html">
-          <img class="m-2 img-height-60" src="images/lovelogo.png" alt="logo">
-        </a>
+  <footer class="container-fluid text-white pt-5 pb-4">
+    <div class="container-lg">
+      <div class="row align-items-center">
+        <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+          <a href="index.html">
+            <img class="m-2" src="images/lovelogo.png" alt="logo- Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
+          </a>
+        </div>
+        <div class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
+          <a href="#"><img src="images/instagram.png" alt="Instagram" class="social-icon mx-2"></a>
+          <a href="https://venmo.com/whatdoyouknowaboutlove" target="_blank">
+            <img src="images/venmo.png" alt="Donate with Venmo" class="donation-icon">
+          </a>
+        </div>
       </div>
-      <div class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
-        <a href="#"><img src="images/instagram.png" alt="Instagram" class="social-icon mx-2"></a>
-        <a href="https://venmo.com/whatdoyouknowaboutlove" target="_blank">
-          <img src="images/venmo.png" alt="Donate with Venmo" class="donation-icon">
-        </a>
-      </div>
+      <p class="footer-copyright small text-center mb-0 footer-opacity" tabindex="0">© What Do You Know About Love</p>
     </div>
-    <p class="footer-copyright small text-center mb-0 footer-opacity" tabindex="0">© What Do You Know About Love</p>
-  </div>
-</footer>
+  </footer>
 
   <script src="scripts.js"></script>
 </body>
