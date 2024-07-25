@@ -46,7 +46,6 @@ body {
 
 
 
-
 .burger-icon {
   width: 24px;
   height: 24px;
@@ -74,7 +73,7 @@ body {
 }
 
 .text-bolder-pink {
-  color: var(--color-bolder-pink)
+  color: var(--color-bolder-pink) !important;
 }
 
 .text-bold-blue {
@@ -279,7 +278,7 @@ footer a:hover {
 }
 
 .donation-icon {
-  width: 30px; /* Adjust the size as needed */
+  width: 30px;
   height: auto;
 }
 
@@ -355,27 +354,6 @@ footer a:hover {
   display: none;
 }
 
-.btn-bold-pink {
-  color: var(--color-darker-pink);
-  border: 2px solid var(--color-darker-pink); /* Set border width and color */
-  background-color: transparent; /* Transparent background to highlight border */
-  border-radius: 4px; /* Slightly rounded corners */
-  padding: 10px 20px; /* Add padding for better click area */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: background-color 0.4s, color 0.4s; /* Smooth transition for hover effect */
-}
-
-.btn-bold-pink:hover {
-  background-color: var(--color-bold-blue); /* Change background on hover */
-  color: var(--color-light-blue); /* Change text color on hover */
-  border-color: var(--color-bold-blue); /* Change border color on hover */
-}
-
 
 .no-underline {
   text-decoration: none;
@@ -394,4 +372,143 @@ footer a:hover {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+
+/* Form Styling */
+#search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#search-input, #search-question {
+  flex: 1 1 auto;
+  min-width: 200px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.input-group {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.input-group-prepend .input-group-text {
+  background-color: var(--color-bold-pink);
+  color: var(--color-white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  height: 40px; 
+  border-radius: 4px 0 0 4px; 
+  box-sizing: border-box;
+}
+
+.form-control {
+  border: 1px solid var(--color-light-gray);
+  padding: 0 10px; 
+  font-size: 16px;
+  box-sizing: border-box; 
+  height: 40px; 
+  border-radius: 0 4px 4px 0; 
+  outline: none; 
+}
+
+.form-control:focus, #search-question:focus {
+  box-shadow: none; 
+}
+
+.input-group:focus-within .form-control, #search-question:focus {
+  border-color: var(--color-bold-pink);
+  box-shadow: 0 0 0 2px var(--color-bold-pink);
+}
+
+.input-group:focus-within .input-group-text {
+  box-shadow: 0 0 0 2px var(--color-bold-pink);
+}
+
+#search-question {
+  border: 1px solid var(--color-light-gray);
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  background-color: var(--color-white);
+}
+
+.btn-bold-pink {
+  color: var(--color-white);
+  border: 2px solid var(--color-darker-pink);
+  background-color: var(--color-bold-pink);
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  margin-bottom: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-bold-pink:hover {
+  background-color: var(--color-bold-blue);
+  color: var(--color-light-blue);
+  border-color: var(--color-bold-blue);
+}
+
+#clear-results-button {
+  margin-left: 10px;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  #search-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-group.d-flex {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/*button*/
+/* Small Pink Button Styling */
+.btn-small-pink {
+  color: var(--color-white);
+  border: 2px solid var(--color-darker-pink);
+  background-color: var(--color-bold-pink);
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  display: inline-block; 
+  margin: 10px 5px; 
+}
+
+.btn-small-pink:hover {
+  background-color: var(--color-bold-blue);
+  color: var(--color-light-blue);
+  border-color: var(--color-bold-blue);
 }
