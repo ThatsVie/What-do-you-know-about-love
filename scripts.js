@@ -138,20 +138,23 @@ document.addEventListener('DOMContentLoaded', function() {
         allAnswers.forEach(answer => {
           const cardTitleElement = answer.querySelector('.card-title');
           const cardTextElement = answer.querySelector('.card-text');
+          const tagsElement = answer.querySelector('.tags');
           console.log('Card Title Element:', cardTitleElement);
           console.log('Card Text Element:', cardTextElement);
   
           if (cardTitleElement && cardTextElement) {
             const cardTitle = cardTitleElement.textContent.toLowerCase();
             const cardText = cardTextElement.getAttribute('data-full-text') || cardTextElement.textContent;
+            const tagsText = tagsElement ? tagsElement.textContent.toLowerCase() : '';
             console.log('Card Title:', cardTitle);
             console.log('Card Text:', cardText);
+            console.log('Tags Text:', tagsText);
   
             if (cardText) {
               const cardTextLower = cardText.toLowerCase();
   
               if (
-                (searchTerm && cardTextLower.includes(searchTerm)) ||
+                (searchTerm && (cardTextLower.includes(searchTerm) || tagsText.includes(searchTerm))) ||
                 (searchQuestionValue && cardTitle.includes(searchQuestionValue))
               ) {
                 console.log('Answer Found:', cardTitle);
@@ -190,6 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+  
   
   
   
