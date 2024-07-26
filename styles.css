@@ -199,7 +199,7 @@ body {
 .nav-link:hover {
   background-color: var(--color-bold-blue); 
   color: var(--color-light-blue);
-  border-color: var(--color-bold-blue);
+  outline: 2px solid var(--color-tan);
 }
 
 /* Header Styles */
@@ -315,15 +315,34 @@ footer a:hover {
 }
   
 
+/* Container for answer cards */
 .answer-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.answer-container .col-md-4 {
-  flex: 1 0 30%;
+/* Response cards */
+.response-card {
+  flex: 1 1 100%; /* Default to full width */
+  max-width: 100%;
   margin-bottom: 20px;
 }
+
+@media (min-width: 576px) {
+  .response-card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row on small screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 768px) {
+  .response-card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row on medium screens */
+    max-width: calc(33.333% - 20px);
+  }
+}
+
 
 /* Questions List */
 .questions-list {
@@ -337,9 +356,9 @@ footer a:hover {
 
 .questions-list a {
   color: var(--color-darker-pink);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 1rem;
   display: block;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
@@ -348,6 +367,8 @@ footer a:hover {
 .questions-list a:hover {
   background-color: var(--color-bold-blue);
   color: var(--color-light-blue);
+  outline: 2px solid var(--color-bold-pink);
+  outline-offset: 2px;
 }
 
 .hidden {
@@ -473,7 +494,7 @@ footer a:hover {
   margin-left: 10px;
 }
 
-/* mobile */
+/* Mobile screens */
 @media (max-width: 767px) {
   #search-form {
     flex-direction: column;
@@ -489,6 +510,39 @@ footer a:hover {
     width: 100%;
   }
 }
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  #search-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group.d-flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  #search-form {
+    flex-direction: row;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .form-group.d-flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 
 /*button*/
 /* Small Pink Button Styling */
