@@ -566,3 +566,18 @@ footer a:hover {
   color: var(--color-light-blue);
   border-color: var(--color-bold-blue);
 }
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: var(--color-bold-pink); /* Customize this to your color scheme */
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: var(--color-bold-blue); /* Customize this to your color scheme */
+  text-decoration: underline;
+}
