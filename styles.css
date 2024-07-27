@@ -226,41 +226,11 @@ h3.card-title {
   background-color: var(--color-dark-gray);
 }
 
-.bg-soft {
-  background: var(--color-bold-blue) url(images/soft.png) no-repeat center top / cover;
+h1.card-title {
+  font-size: 20px;
+  color: var(--color-bold-pink); /* Keep the text color consistent with the card titles */
 }
 
-.bg-soft2 {
-  background: var(--color-bold-blue) url(images/soft2.png) no-repeat center top / cover;
-}
-
-.bg-soft3 {
-  background: var(--color-light-tan) url(images/soft3.png) no-repeat center top / cover;
-}
-
-.bg-soft4 {
-  background: var(--color-bold-blue) url(images/soft4.png) no-repeat center;
-}
-
-.bg-soft5 {
-  background: var(--color-bold-blue) url(images/soft5.png) no-repeat center top / cover;
-}
-
-.bg-soft6 {
-  background: var(--color-bold-blue) url(images/soft6.png) no-repeat center top / cover;
-}
-
-.bg-bold {
-  background: var(--color-bold-pink) url(images/bold.png) no-repeat center top / cover;
-}
-
-.bg-bold2 {
-  background: var(--color-bold-pink) url(images/bold2.png) no-repeat center top / cover;
-}
-
-.bg-bold3 {
-  background: var(--color-bold-pink) url(images/bold3.png) no-repeat center top / cover;
-}
 
 
 
