@@ -254,14 +254,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-
-  
-
-  
-  
-  
-  
-  
-  
-  
-  

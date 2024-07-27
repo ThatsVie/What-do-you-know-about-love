@@ -256,6 +256,12 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
   border: none;
   border-radius: 10px;
@@ -289,6 +295,7 @@ footer a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 /* Response cards */
