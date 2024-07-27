@@ -38,6 +38,21 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   
+    function highlightText(element, searchTerm) {
+      const innerHTML = element.innerHTML;
+      const regex = new RegExp(`(${searchTerm})`, 'gi');
+      const newHTML = innerHTML.replace(regex, '<span class="highlight">$1</span>');
+      element.innerHTML = newHTML;
+    }
+  
+    function clearSearchResults() {
+      const searchContainer = document.querySelector('#search-results');
+      const searchResultsSection = document.querySelector('#search-results-container');
+      searchContainer.innerHTML = '';
+      searchResultsSection.style.display = 'none';
+      console.log('Search Results Cleared');
+    }
+  
     setupReadMoreLinks(responseCards);
   
     const questionLinks = document.querySelectorAll('.question-link');
@@ -52,11 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
       questionLinks.forEach(link => {
         link.addEventListener('click', function(event) {
           event.preventDefault();
+          clearSearchResults(); // Clear previous search results
           const targetClass = this.getAttribute('data-target');
           console.log('Question Link Clicked:', targetClass);
   
           if (searchContainer) {
-            searchContainer.innerHTML = '';
             const relatedAnswers = document.querySelectorAll(`.${targetClass}`);
             console.log('Related Answers:', relatedAnswers);
             relatedAnswers.forEach(answer => {
@@ -124,12 +139,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (searchForm) {
       searchForm.addEventListener('submit', function(event) {
         event.preventDefault();
+        clearSearchResults(); // Clear previous search results
         const searchTerm = searchInput.value.trim().toLowerCase();
         const searchQuestionValue = searchQuestion.value.trim().toLowerCase();
         console.log('Search Term:', searchTerm);
         console.log('Search Question Value:', searchQuestionValue);
-  
-        searchContainer.innerHTML = '';
   
         const allAnswers = document.querySelectorAll('.response-card');
         console.log('All Answers:', allAnswers);
@@ -137,31 +151,47 @@ document.addEventListener('DOMContentLoaded', function() {
   
         allAnswers.forEach(answer => {
           const cardTitleElement = answer.querySelector('.card-title');
-          const cardTextElement = answer.querySelector('.card-text');
+          const cardTextElements = answer.querySelectorAll('.card-text');
           const tagsElement = answer.querySelector('.tags');
           console.log('Card Title Element:', cardTitleElement);
-          console.log('Card Text Element:', cardTextElement);
+          console.log('Card Text Elements:', cardTextElements);
   
-          if (cardTitleElement && cardTextElement) {
+          if (cardTitleElement) {
             const cardTitle = cardTitleElement.textContent.toLowerCase();
-            const cardText = cardTextElement.getAttribute('data-full-text') || cardTextElement.textContent;
             const tagsText = tagsElement ? tagsElement.textContent.toLowerCase() : '';
+            let cardTextCombined = '';
+            cardTextElements.forEach(textElement => {
+              cardTextCombined += (textElement.getAttribute('data-full-text') || textElement.textContent) + ' ';
+            });
+            cardTextCombined = cardTextCombined.trim().toLowerCase();
+  
             console.log('Card Title:', cardTitle);
-            console.log('Card Text:', cardText);
+            console.log('Card Text Combined:', cardTextCombined);
             console.log('Tags Text:', tagsText);
   
-            if (cardText) {
-              const cardTextLower = cardText.toLowerCase();
+            if (
+              (searchTerm && (cardTitle.includes(searchTerm) || cardTextCombined.includes(searchTerm) || tagsText.includes(searchTerm))) ||
+              (searchQuestionValue && cardTitle.includes(searchQuestionValue))
+            ) {
+              console.log('Answer Found:', cardTitle);
+              const answerClone = answer.cloneNode(true);
   
-              if (
-                (searchTerm && (cardTextLower.includes(searchTerm) || tagsText.includes(searchTerm))) ||
-                (searchQuestionValue && cardTitle.includes(searchQuestionValue))
-              ) {
-                console.log('Answer Found:', cardTitle);
-                const answerClone = answer.cloneNode(true);
-                searchContainer.appendChild(answerClone);
-                hasResults = true;
+              if (searchTerm) {
+                // Highlight the search term in the cloned card
+                const clonedTitle = answerClone.querySelector('.card-title');
+                highlightText(clonedTitle, searchTerm);
+                const clonedTextElements = answerClone.querySelectorAll('.card-text');
+                clonedTextElements.forEach(textElement => {
+                  highlightText(textElement, searchTerm);
+                });
+                const clonedTags = answerClone.querySelector('.tags');
+                if (clonedTags) {
+                  highlightText(clonedTags, searchTerm);
+                }
               }
+  
+              searchContainer.appendChild(answerClone);
+              hasResults = true;
             }
           }
         });
@@ -193,6 +223,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+  
+  
   
   
   
