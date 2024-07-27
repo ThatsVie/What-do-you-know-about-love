@@ -1,1 +1,28 @@
 test.html
+# Ignore SQLite database files
+*.db
+*.sqlite3
+
+# Ignore environment variable files
+.env
+
+# Ignore database backups or dumps
+*.sql
+*.bak
+
+# Ignore sensitive configuration files
+config.php
+
+# Ignore compiled PHP files
+*.compiled.php
+
+# Ignore node_modules
+node_modules/
+
+# Ignore log files and directories
+logs/
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
