@@ -575,3 +575,27 @@ footer a:hover {
   font-weight: bold;
 }
 
+.invalid-feedback {
+  display: block;
+  font-size: 14px;
+  color: #850F36;
+  font-weight: 600;
+}
+
+.needs-validation .was-validated .form-control:invalid {
+  border-color: red;
+}
+
+.needs-validation .was-validated .form-control:valid {
+  border-color: green;
+}
+
+.high-contrast-text {
+  color: #000000;
+}
+
+.high-contrast-link {
+  color: var(--color-bold-blue);
+  text-decoration: underline; 
+  font-weight: bold;
+}

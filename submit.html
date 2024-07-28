@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="images/favicon2.png">
+  <link rel="icon" type="image/webp" href="images/favicon2.webp">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
@@ -23,7 +23,7 @@
     <div class="container-lg h-100 d-flex flex-column justify-content-between">
       <nav class="d-flex flex-column flex-sm-row pt-4">
         <a href="index.html" class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-          <img class="m-2" src="images/lovelogo.png" alt="logo- Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
+          <img class="m-2" src="images/lovelogo.webp" alt="logo- Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
         </a>
         <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle main navigation">
           <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@
 
   <main class="container">
     <h2 class="text-center text-white mb-5">Submit a Response to What Do You Know About Love?</h2>
-    <form id="love-form" action="https://vast-cliffs-70374.herokuapp.com/submit" method="POST">
+    <form id="love-form" action="https://vast-cliffs-70374.herokuapp.com/submit" method="POST" class="needs-validation" novalidate>
       <div class="form-group">
         <label for="email">Email *</label>
         <input type="email" class="form-control" id="email" name="email" required>
@@ -69,6 +69,7 @@
       <div class="form-group">
         <label for="name">Name *</label>
         <input type="text" class="form-control" id="name" name="name" required>
+        <div class="invalid-feedback">Please provide a name.</div>
       </div>
       <div class="form-group">
         <label for="gender_pronouns">Gender & Pronouns (optional)</label>
@@ -120,7 +121,7 @@
           <option value="How do you keep love alive in long-distance relationships?">28. How do you keep love alive in long-distance relationships?</option>
           <option value="How has technology impacted your experience of love?">29. How has technology impacted your experience of love?</option>
           <option value="How do cultural or societal norms influence your understanding of love?">30. How do cultural or societal norms influence your understanding of love?</option>
-          
+
         </select>
         <div class="invalid-feedback">Please select a question.</div>
       </div>
@@ -129,8 +130,26 @@
         <textarea class="form-control" id="answer" name="answer" rows="5" required></textarea>
         <div class="invalid-feedback">Please provide an answer.</div>
       </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="mailingList" name="mailingList">
+        <label class="form-check-label" for="mailingList">Check here if you would like to be added to our mailing list to stay informed about the future of this project.</label>
+      </div>
       <button type="submit" class="btn btn-small-pink">Submit</button>
     </form>
+    <div class="mt-4">
+      <p class="high-contrast-text">
+        Note: By submitting your response, you consent to having your answers posted on
+        <a href="http://whatdoyouknowaboutlove.com" target="_blank" class="high-contrast-link">whatdoyouknowaboutlove.com</a> and
+        <a href="http://instagram.com/whatdoyouknowaboutlove/" target="_blank" class="high-contrast-link">instagram.com/whatdoyouknowaboutlove</a>.
+        Identifiable information will only be shared if you choose to provide it. Your email addresses will be protected.
+      </p>
+      <p class="high-contrast-text">
+        Thank you for sharing your thoughts and experiences about love!
+      </p>
+      <p class="high-contrast-text">
+        Your suggestions are welcome. Contact: <a href="mailto:info@whatdoyouknowaboutlove.com" class="high-contrast-link">info@whatdoyouknowaboutlove.com</a>
+      </p>
+    </div>
   </main>
 
   <!-- Footer Section -->
@@ -139,17 +158,19 @@
       <div class="row align-items-center">
         <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
           <a href="index.html">
-            <img class="m-2" src="images/lovelogo.png" alt="logo- Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
+            <img class="m-2" src="images/lovelogo.webp" alt="logo- Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
           </a>
         </div>
         <div class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
-          <a href="#"><img src="images/instagram.png" alt="Instagram" class="social-icon mx-2"></a>
+          <a href="https://www.instagram.com/whatdoyouknowaboutlove/" target="_blank">
+            <img src="images/instagram.webp" alt="Instagram" class="social-icon mx-2">
+          </a>
           <a href="https://venmo.com/whatdoyouknowaboutlove" target="_blank">
-            <img src="images/venmo.png" alt="Donate with Venmo" class="donation-icon">
+            <img src="images/venmo.webp" alt="Donate with Venmo" class="donation-icon">
           </a>
         </div>
       </div>
-      <p class="footer-copyright small text-center mb-0 footer-opacity" tabindex="0">© What Do You Know About Love</p>
+      <p class="footer-copyright small text-center mb-0 footer-opacity" tabindex="0">Contact: <a href="mailto:info@whatdoyouknowaboutlove.com">info@whatdoyouknowaboutlove.com</a> <br>© What Do You Know About Love 2024</p>
     </div>
   </footer>
 
