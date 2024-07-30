@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       const formData = new FormData(event.target);
-      fetch('https://vast-cliffs-70374.herokuapp.com/submit', {
+      fetch('https://love-responses.vercel.app/submit', {
         method: 'POST',
         body: JSON.stringify(Object.fromEntries(formData)),
         headers: {
