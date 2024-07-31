@@ -61,11 +61,7 @@
   <main class="container">
     <h2 class="text-center text-white mb-5">Submit a Response to What Do You Know About Love?</h2>
     <form id="love-form" action="https://love-responses.vercel.app/submit" method="POST" class="needs-validation" novalidate>
-      <div class="form-group mb-3">
-        <label for="email">Email *</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-        <div class="invalid-feedback">Please provide a valid email.</div>
-      </div>
+      
       <div class="form-group mb-3">
         <label for="name">Name *</label>
         <input type="text" class="form-control" id="name" name="name" required>
@@ -130,10 +126,7 @@
         <textarea class="form-control" id="answer" name="answer" rows="5" required></textarea>
         <div class="invalid-feedback">Please provide an answer.</div>
       </div>
-      <div class="form-group form-check mb-3">
-        <input type="checkbox" class="form-check-input" id="mailingList" name="mailingList">
-        <label class="form-check-label" for="mailingList">Check here if you would like to be added to our mailing list to stay informed about the future of this project.</label>
-      </div>
+      
       <button type="submit" class="btn btn-small-pink">Submit</button>
     </form>
     <div class="mt-4">
