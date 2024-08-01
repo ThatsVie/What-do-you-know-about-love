@@ -222,35 +222,4 @@ document.addEventListener('DOMContentLoaded', function() {
       searchQuestion.value = '';
     });
   }
-
-  // Add event listener for form submission
-  const form = document.getElementById('love-form');
-  if (form) {
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      form.classList.add('was-validated');
-      if (form.checkValidity() === false) {
-        return;
-      }
-      const formData = new FormData(event.target);
-      fetch('https://love-responses.vercel.app/submit', {
-        method: 'POST',
-        body: JSON.stringify(Object.fromEntries(formData)),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          alert('Response submitted successfully!');
-          event.target.reset();
-          form.classList.remove('was-validated'); // Reset validation class
-        } else {
-          alert('Failed to submit response');
-        }
-      }).catch(error => {
-        console.error('Error:', error);
-        alert('Failed to submit response');
-      });
-    });
-  }
 });

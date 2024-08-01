@@ -599,3 +599,9 @@ footer a:hover {
   text-decoration: underline; 
   font-weight: bold;
 }
+
+.google-sheet-container {
+  width: 100%;
+  
+  overflow: hidden;
+}

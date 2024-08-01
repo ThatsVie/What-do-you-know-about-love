@@ -58,96 +58,17 @@
     </div>
   </header>
 
+ 
   <main class="container">
-    <h2 class="text-center text-white mb-5">Submit a Response to What Do You Know About Love?</h2>
-    <form id="love-form" action="https://love-responses.vercel.app/submit" method="POST" class="needs-validation" novalidate>
-      
-      <div class="form-group mb-3">
-        <label for="name">Name *</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-        <div class="invalid-feedback">Please provide a name.</div>
-      </div>
-      <div class="form-group mb-3">
-        <label for="gender_pronouns">Gender & Pronouns (optional)</label>
-        <input type="text" class="form-control" id="gender_pronouns" name="gender_pronouns">
-      </div>
-      <div class="form-group mb-3">
-        <label for="age">Age (optional)</label>
-        <input type="number" class="form-control" id="age" name="age">
-      </div>
-      <div class="form-group mb-3">
-        <label for="location">Location (optional)</label>
-        <input type="text" class="form-control" id="location" name="location">
-      </div>
-      <div class="form-group mb-3">
-        <label for="additional_identifiers">Additional Identifiers (optional)</label>
-        <textarea class="form-control" id="additional_identifiers" name="additional_identifiers" rows="3"></textarea>
-      </div>
-      <div class="form-group mb-3">
-        <label for="question">Select the question you would like to answer: *</label>
-        <select class="form-control" id="question" name="question" required>
-          <option value="">--Please choose a question to answer--</option>
-          <option value="What do you know about love?">1. What do you know about love?</option>
-          <option value="When have you felt the most loved?">2. When have you felt the most loved?</option>
-          <option value="What does love feel like?">3. What does love feel like?</option>
-          <option value="How do you express love to yourself, friends, family, and/or community?">4. How do you express love to yourself, friends, family, and/or community?</option>
-          <option value="How would you define love?">5. How would you define love?</option>
-          <option value="How have your experiences of love evolved over time?">6. How have your experiences of love evolved over time?</option>
-          <option value="What was your first experience of feeling loved?">7. What was your first experience of feeling loved?</option>
-          <option value="What does unconditional love mean to you, and have you experienced it?">8. What does unconditional love mean to you, and have you experienced it?</option>
-          <option value="How do you nurture love in long-term friendships?">9. How do you nurture love in long-term friendships?</option>
-          <option value="How do you handle situations where love is difficult or unreciprocated?">10. How do you handle situations where love is difficult or unreciprocated?</option>
-          <option value="What lessons have you learned from experiencing heartbreak or loss in love?">11. What lessons have you learned from experiencing heartbreak or loss in love?</option>
-          <option value="How has your understanding of self-love evolved over time?">12. How has your understanding of self-love evolved over time?</option>
-          <option value="How do you recover and heal from a broken heart?">13. How do you recover and heal from a broken heart?</option>
-          <option value="What challenges have you faced in expressing love, and how did you overcome them?">14. What challenges have you faced in expressing love, and how did you overcome them?</option>
-          <option value="Do you believe in a spiritual or higher form of love? If so, how do you experience it?">15. Do you believe in a spiritual or higher form of love? If so, how do you experience it?</option>
-          <option value="How does your spirituality or religious beliefs influence your understanding of love?">16. How does your spirituality or religious beliefs influence your understanding of love?</option>
-          <option value="Can you share a cultural practice related to love that you find beautiful or meaningful?">17. Can you share a cultural practice related to love that you find beautiful or meaningful?</option>
-          <option value="How has being loved helped you through difficult times?">18. How has being loved helped you through difficult times?</option>
-          <option value="What is the most powerful lesson love has taught you?">19. What is the most powerful lesson love has taught you?</option>
-          <option value="What advice would you give to someone struggling to find or feel love?">20. What advice would you give to someone struggling to find or feel love?</option>
-          <option value="How do you celebrate love in your daily life?">21. How do you celebrate love in your daily life?</option>
-          <option value="Can you describe a moment when you felt love from a stranger?">22. Can you describe a moment when you felt love from a stranger?</option>
-          <option value="How do you practice forgiveness in your relationships?">23. How do you practice forgiveness in your relationships?</option>
-          <option value="How has a significant relationship changed your understanding of love?">24. How has a significant relationship changed your understanding of love?</option>
-          <option value="What acts of kindness have shown you love?">25. What acts of kindness have shown you love?</option>
-          <option value="How do you maintain self-love during challenging times?">26. How do you maintain self-love during challenging times?</option>
-          <option value="What’s the best piece of advice you’ve received about love?">27. What’s the best piece of advice you’ve received about love?</option>
-          <option value="How do you keep love alive in long-distance relationships?">28. How do you keep love alive in long-distance relationships?</option>
-          <option value="How has technology impacted your experience of love?">29. How has technology impacted your experience of love?</option>
-          <option value="How do cultural or societal norms influence your understanding of love?">30. How do cultural or societal norms influence your understanding of love?</option>
-
-        </select>
-        <div class="invalid-feedback">Please select a question.</div>
-      </div>
-      <div class="form-group mb-3">
-        <label for="answer">Your Answer *</label>
-        <textarea class="form-control" id="answer" name="answer" rows="5" required></textarea>
-        <div class="invalid-feedback">Please provide an answer.</div>
-      </div>
-      
-      <button type="submit" class="btn btn-small-pink">Submit</button>
-    </form>
-    <div class="mt-4">
-      <p class="high-contrast-text">
-        Note: By submitting your response, you consent to having your answers posted on
-        <a href="http://whatdoyouknowaboutlove.com" target="_blank" class="high-contrast-link">whatdoyouknowaboutlove.com</a> and
-        <a href="http://instagram.com/whatdoyouknowaboutlove/" target="_blank" class="high-contrast-link">instagram.com/whatdoyouknowaboutlove</a>.
-        Identifiable information will only be shared if you choose to provide it.
-      </p>
-      <p class="high-contrast-text">
-        Thank you for sharing your thoughts and experiences about love!
-      </p>
-      <p class="high-contrast-text">
-        Your suggestions are welcome. Contact: <a href="mailto:info@whatdoyouknowaboutlove.com" class="high-contrast-link">info@whatdoyouknowaboutlove.com</a>
-      </p>
-      <p class="high-contrast-text font-18">
-        <strong>If you are having difficulty submitting the form, please use our backup Google form: 
-        <a href="https://forms.gle/yuuqEk9PWgUduQPJ6" target="_blank" class="high-contrast-link">https://forms.gle/yuuqEk9PWgUduQPJ6</a></strong>
-      </p>
+    <div class="form-container">
+      <h2 class="text-center text-white" tabindex="0">Submit a Response</h2>
+      <!-- Embed Google Form -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJWRDQGB3w72Ni3hlIljfFhrowOEpHq2USUO0C2hpx1qAqzQ/viewform?embedded=true" width="100%" height="1136" frameborder="0" marginheight="0" marginwidth="0" title="Google Form to submit responses">
+        Loading…
+      </iframe>
     </div>
-  </main>
+
+</main>
 
   <!-- Footer Section -->
   <footer class="container-fluid text-white pt-5 pb-4">
