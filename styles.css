@@ -636,7 +636,30 @@ footer a:hover {
 }
 
 .logo-image:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
+.back-to-top-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.back-to-top {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-bold-pink);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: var(--color-bold-blue);
+  color: white;
+  transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }

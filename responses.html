@@ -17,7 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
 </head>
 
-<body>
+<body id="top">
   <!-- Header Section -->
   <header class="container-fluid text-white pb-5">
     <div class="container-lg h-100 d-flex flex-column justify-content-between">
@@ -214,6 +214,9 @@
           </div>
         </div>
       </div>
+      
+
+
 
       <div id="answer-2" div class="response-card col-md-4 mt-4 answer-2" tabindex="0">
         <div class="card border-0 shadow-sm h-100 bg-white">
@@ -853,6 +856,7 @@
         </div>
       </div>
 
+
       <div id="answer-30" div class="response-card col-md-4 mt-4 answer-30" tabindex="0">
         <div class="card border-0 shadow-sm h-100 bg-white">
           <div class="card-body d-flex flex-column">
@@ -887,6 +891,11 @@
         </div>
       </div>
 
+
+    </div>
+
+    <div class="back-to-top-container">
+      <a href="#top" class="back-to-top">Back to Top</a>
     </div>
   </section>
 
@@ -928,6 +937,10 @@
     </ul>
   </section>
 
+  <div class="back-to-top-container">
+    <a href="#top" class="back-to-top">Back to Top</a>
+  </div>
+
   <!-- Footer Section -->
   <footer class="container-fluid text-white pt-5 pb-4">
     <div class="container-lg">
@@ -951,6 +964,17 @@
   </footer>
 
   <script src="scripts.js"></script>
+  <script>
+    document.querySelectorAll('a.back-to-top').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
