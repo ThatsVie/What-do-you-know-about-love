@@ -200,6 +200,9 @@ body {
   background-color: var(--color-bold-blue); 
   color: var(--color-light-blue);
   outline: 2px solid var(--color-tan);
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 /* Header Styles */
@@ -249,8 +252,8 @@ footer a:hover {
 .donation-icon {
   width: 30px;
   height: auto;
+  
 }
-
 
 .response {
   margin-bottom: 20px;
@@ -345,6 +348,9 @@ footer a:hover {
   color: var(--color-light-blue);
   outline: 2px solid var(--color-bold-pink);
   outline-offset: 2px;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 .hidden {
@@ -358,6 +364,9 @@ footer a:hover {
 
 .no-underline:hover {
   text-decoration: none;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 .sr-only {
@@ -464,6 +473,9 @@ footer a:hover {
   background-color: var(--color-bold-blue);
   color: var(--color-light-blue);
   border-color: var(--color-bold-blue);
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 #clear-results-button {
@@ -541,6 +553,9 @@ footer a:hover {
   background-color: var(--color-bold-blue);
   color: var(--color-light-blue);
   border-color: var(--color-bold-blue);
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 .read-more {
@@ -551,12 +566,17 @@ footer a:hover {
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-family: var(--font-family-secondary);
 }
 
 .read-more:hover {
+  font-family: var(--font-family-secondary);
   background-color: var(--color-bold-blue);
   color: var(--color-light-blue);
   border-color: var(--color-bold-blue);
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 .visually-hidden {
@@ -604,4 +624,19 @@ footer a:hover {
   width: 100%;
   
   overflow: hidden;
+}
+
+/* Logo styling */
+.logo-image {
+  display: block;
+  margin: 20px auto;
+  height: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease; 
+}
+
+.logo-image:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
