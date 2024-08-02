@@ -659,8 +659,9 @@ footer a:hover {
 
 .back-to-top:hover {
   background-color: var(--color-bold-blue);
-  color: white;
-  transform: scale(1.1);
+  color: var(--color-light-blue);
+  border-color: var(--color-bold-blue);
+  transform: scale(1.1); /* Slightly enlarge on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }

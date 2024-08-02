@@ -71,6 +71,34 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Search Results Cleared');
   }
 
+  // Function to insert "Back to Top" buttons at the correct intervals
+  function insertBackToTopButtons(cards, container) {
+    const isMobile = window.innerWidth <= 768;
+    const cardsPerButton = isMobile ? 3 : 6;
+
+    let count = 0;
+    let tempContainer = document.createElement('div');
+    tempContainer.className = 'row';
+
+    cards.forEach((card, index) => {
+      tempContainer.appendChild(card);
+      count++;
+
+      if (count === cardsPerButton || index === cards.length - 1) {
+        const backToTopContainer = document.createElement('div');
+        backToTopContainer.className = 'col-12 text-center my-3';
+        backToTopContainer.innerHTML = '<a href="#top" class="back-to-top">Back to Top</a>';
+        tempContainer.appendChild(backToTopContainer);
+        container.appendChild(tempContainer);
+
+        // Reset for the next group
+        tempContainer = document.createElement('div');
+        tempContainer.className = 'row';
+        count = 0;
+      }
+    });
+  }
+
   setupReadMoreLinks(responseCards);
 
   const questionLinks = document.querySelectorAll('.question-link');
@@ -111,6 +139,9 @@ document.addEventListener('DOMContentLoaded', function() {
           // Reattach the event listeners to the dynamically added cards
           const newCards = searchContainer.querySelectorAll('.response-card');
           setupReadMoreLinks(newCards);
+
+          // Insert "Back to Top" buttons at the correct intervals for the cloned cards
+          insertBackToTopButtons(newCards, searchContainer);
         }
       });
     });
@@ -200,15 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
               highlightText(clonedTitle, searchTerm);
               const clonedTextElements = answerClone.querySelectorAll('.card-text');
               clonedTextElements.forEach(textElement => {
-                // Update data-full-text attribute to include highlighted text
-                const fullText = textElement.getAttribute('data-full-text');
-                if (fullText) {
-                  const highlightedFullText = fullText.replace(new RegExp(`(${searchTerm})`, 'gi'), '<span class="highlight">$1</span>');
-                  textElement.setAttribute('data-full-text', highlightedFullText);
-                  textElement.innerHTML = highlightedFullText;
-                } else {
-                  highlightText(textElement, searchTerm);
-                }
+                highlightText(textElement, searchTerm);
               });
               const clonedTags = answerClone.querySelector('.tags');
               if (clonedTags) {
@@ -239,6 +262,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Reattach the event listeners to the dynamically added cards
       const newCards = searchContainer.querySelectorAll('.response-card');
       setupReadMoreLinks(newCards);
+
+      // Insert "Back to Top" buttons at the correct intervals for the cloned cards
+      insertBackToTopButtons(newCards, searchContainer);
     });
 
     clearResultsButton.addEventListener('click', function() {
@@ -249,6 +275,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Function to insert "Back to Top" buttons at the correct intervals
+  function insertBackToTopButtons(cards, container) {
+    const isMobile = window.innerWidth <= 768;
+    const cardsPerButton = isMobile ? 3 : 6;
+
+    let count = 0;
+    let tempContainer = document.createElement('div');
+    tempContainer.className = 'row';
+
+    cards.forEach((card, index) => {
+      tempContainer.appendChild(card);
+      count++;
+
+      if (count === cardsPerButton || index === cards.length - 1) {
+        const backToTopContainer = document.createElement('div');
+        backToTopContainer.className = 'col-12 text-center my-3';
+        backToTopContainer.innerHTML = '<a href="#top" class="back-to-top">Back to Top</a>';
+        tempContainer.appendChild(backToTopContainer);
+        container.appendChild(tempContainer);
+
+        // Reset for the next group
+        tempContainer = document.createElement('div');
+        tempContainer.className = 'row';
+        count = 0;
+      }
+    });
+  }
+
   // Insert response cards into the response-container
   const responseContainer = document.getElementById('response-container');
 
@@ -256,17 +310,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const isMobile = window.innerWidth <= 768;
     const cardsPerButton = isMobile ? 3 : 6;
 
-    cards.forEach((card, index) => {
-      const answerContainer = document.getElementById(`answer-container-${Math.floor(index / cardsPerButton) + 1}`);
-      if (answerContainer) {
-        answerContainer.appendChild(card);
-      }
+    let count = 0;
+    let tempContainer = document.createElement('div');
+    tempContainer.className = 'row';
 
-      if ((index + 1) % cardsPerButton === 0) {
+    cards.forEach((card, index) => {
+      tempContainer.appendChild(card);
+      count++;
+
+      if (count === cardsPerButton || index === cards.length - 1) {
         const backToTopContainer = document.createElement('div');
-        backToTopContainer.className = 'back-to-top-container';
+        backToTopContainer.className = 'col-12 text-center my-3';
         backToTopContainer.innerHTML = '<a href="#top" class="back-to-top">Back to Top</a>';
-        answerContainer.appendChild(backToTopContainer);
+        tempContainer.appendChild(backToTopContainer);
+        responseContainer.appendChild(tempContainer);
+
+        // Reset for the next group
+        tempContainer = document.createElement('div');
+        tempContainer.className = 'row';
+        count = 0;
       }
     });
   }
