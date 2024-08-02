@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "firebase": "^10.12.5",
     "js-beautify": "^1.15.1"
   }
 }
