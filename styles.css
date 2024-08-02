@@ -36,9 +36,8 @@ body {
   margin-top: 50px;
 }
 
-.form-container,
+
 .response-container {
-  background-color: var(--);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -622,7 +621,6 @@ footer a:hover {
 
 .google-sheet-container {
   width: 100%;
-  
   overflow: hidden;
 }
 
@@ -664,4 +662,16 @@ footer a:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
+@media (min-width: 768px) {
+  .google-sheet-container iframe {
+    height: 1100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .google-sheet-container iframe {
+    height: 1300px;
+  }
 }
