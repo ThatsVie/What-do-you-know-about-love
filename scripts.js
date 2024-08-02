@@ -1,14 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Log to confirm the DOM is fully loaded
   console.log('DOM fully loaded and parsed');
 
-  // Set the length for truncated text
   const truncateLength = 200;
-  // Get all response cards
   const responseCards = document.querySelectorAll('.response-card');
   console.log('Response Cards:', responseCards);
 
-  // Function to set up "Read More" links on cards
+  // Function to set up "Read More" links for response cards
   function setupReadMoreLinks(cards) {
     cards.forEach(card => {
       const cardText = card.querySelector('.card-text[data-full-text]');
@@ -17,26 +14,24 @@ document.addEventListener('DOMContentLoaded', function() {
         if (fullText) {
           const truncatedText = fullText.substring(0, truncateLength) + '...';
 
-          // If full text is longer than truncate length, set up "Read More" link
           if (fullText.length > truncateLength) {
-            cardText.textContent = truncatedText;
+            cardText.innerHTML = truncatedText;
 
             const readMoreLink = card.querySelector('.read-more');
             readMoreLink.style.display = 'inline';
             readMoreLink.addEventListener('click', function(event) {
               event.preventDefault();
               console.log('Read More clicked');
-              if (cardText.textContent === truncatedText) {
-                cardText.textContent = fullText;
+              if (cardText.innerHTML === truncatedText) {
+                cardText.innerHTML = fullText;
                 readMoreLink.textContent = 'Read Less';
               } else {
-                cardText.textContent = truncatedText;
+                cardText.innerHTML = truncatedText;
                 readMoreLink.textContent = 'Read More';
               }
             });
           } else {
-            // If full text is shorter than truncate length, display full text
-            cardText.textContent = fullText;
+            cardText.innerHTML = fullText;
             card.querySelector('.read-more').style.display = 'none';
           }
         }
@@ -44,12 +39,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Function to highlight search terms in text
+  // Function to highlight text within an element and its children
   function highlightText(element, searchTerm) {
-    const innerHTML = element.innerHTML;
     const regex = new RegExp(`(${searchTerm})`, 'gi');
-    const newHTML = innerHTML.replace(regex, '<span class="highlight">$1</span>');
-    element.innerHTML = newHTML;
+
+    // Recursively highlight text in the element and its children
+    function recursiveHighlight(node) {
+      if (node.nodeType === 3) { // Text node
+        const parent = node.parentNode;
+        const highlightedText = node.nodeValue.replace(regex, '<span class="highlight">$1</span>');
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = highlightedText;
+        while (tempDiv.firstChild) {
+          parent.insertBefore(tempDiv.firstChild, node);
+        }
+        parent.removeChild(node);
+      } else if (node.nodeType === 1 && node.childNodes) { // Element node
+        node.childNodes.forEach(child => recursiveHighlight(child));
+      }
+    }
+
+    recursiveHighlight(element);
   }
 
   // Function to clear search results
@@ -61,10 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Search Results Cleared');
   }
 
-  // Set up "Read More" links for initial response cards
   setupReadMoreLinks(responseCards);
 
-  // Set up event listeners for question links
   const questionLinks = document.querySelectorAll('.question-link');
   const searchResultsSection = document.querySelector('#search-results-container');
   const searchContainer = document.querySelector('#search-results');
@@ -108,7 +116,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Set up smooth scrolling for navigation links
   const navLinks = document.querySelectorAll('a.nav-link');
 
   if (navLinks) {
@@ -128,7 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Check URL parameters for target element to scroll into view
   const urlParams = new URLSearchParams(window.location.search);
   const target = urlParams.get('target');
   if (target) {
@@ -138,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Set up search form submission and clear buttons
   const searchForm = document.querySelector('#search-form');
   const searchInput = document.querySelector('#search-input');
   const searchQuestion = document.querySelector('#search-question');
@@ -195,7 +200,15 @@ document.addEventListener('DOMContentLoaded', function() {
               highlightText(clonedTitle, searchTerm);
               const clonedTextElements = answerClone.querySelectorAll('.card-text');
               clonedTextElements.forEach(textElement => {
-                highlightText(textElement, searchTerm);
+                // Update data-full-text attribute to include highlighted text
+                const fullText = textElement.getAttribute('data-full-text');
+                if (fullText) {
+                  const highlightedFullText = fullText.replace(new RegExp(`(${searchTerm})`, 'gi'), '<span class="highlight">$1</span>');
+                  textElement.setAttribute('data-full-text', highlightedFullText);
+                  textElement.innerHTML = highlightedFullText;
+                } else {
+                  highlightText(textElement, searchTerm);
+                }
               });
               const clonedTags = answerClone.querySelector('.tags');
               if (clonedTags) {
@@ -241,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function insertResponseCards(cards) {
     const isMobile = window.innerWidth <= 768;
-    const cardsPerButton = isMobile ? 3 : 9;
+    const cardsPerButton = isMobile ? 3 : 6;
 
     cards.forEach((card, index) => {
       const answerContainer = document.getElementById(`answer-container-${Math.floor(index / cardsPerButton) + 1}`);
@@ -258,6 +271,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Insert the response cards and back-to-top buttons
   insertResponseCards(Array.from(responseCards));
 });
