@@ -675,3 +675,21 @@ footer a:hover {
     height: 1300px;
   }
 }
+
+.support-container {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 2rem;
+}
+
+.support-container ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.support-container ul li i {
+  color: var(--color-bold-pink);
+  margin-right: 10px;
+}
