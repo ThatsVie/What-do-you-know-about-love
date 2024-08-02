@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Log to confirm the DOM is fully loaded
   console.log('DOM fully loaded and parsed');
 
+  // Set the length for truncated text
   const truncateLength = 200;
+  // Get all response cards
   const responseCards = document.querySelectorAll('.response-card');
   console.log('Response Cards:', responseCards);
 
+  // Function to set up "Read More" links on cards
   function setupReadMoreLinks(cards) {
     cards.forEach(card => {
       const cardText = card.querySelector('.card-text[data-full-text]');
@@ -13,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (fullText) {
           const truncatedText = fullText.substring(0, truncateLength) + '...';
 
+          // If full text is longer than truncate length, set up "Read More" link
           if (fullText.length > truncateLength) {
             cardText.textContent = truncatedText;
 
@@ -30,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
               }
             });
           } else {
+            // If full text is shorter than truncate length, display full text
             cardText.textContent = fullText;
             card.querySelector('.read-more').style.display = 'none';
           }
@@ -38,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Function to highlight search terms in text
   function highlightText(element, searchTerm) {
     const innerHTML = element.innerHTML;
     const regex = new RegExp(`(${searchTerm})`, 'gi');
@@ -45,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     element.innerHTML = newHTML;
   }
 
+  // Function to clear search results
   function clearSearchResults() {
     const searchContainer = document.querySelector('#search-results');
     const searchResultsSection = document.querySelector('#search-results-container');
@@ -53,8 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Search Results Cleared');
   }
 
+  // Set up "Read More" links for initial response cards
   setupReadMoreLinks(responseCards);
 
+  // Set up event listeners for question links
   const questionLinks = document.querySelectorAll('.question-link');
   const searchResultsSection = document.querySelector('#search-results-container');
   const searchContainer = document.querySelector('#search-results');
@@ -98,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Set up smooth scrolling for navigation links
   const navLinks = document.querySelectorAll('a.nav-link');
 
   if (navLinks) {
@@ -117,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Check URL parameters for target element to scroll into view
   const urlParams = new URLSearchParams(window.location.search);
   const target = urlParams.get('target');
   if (target) {
@@ -126,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // Set up search form submission and clear buttons
   const searchForm = document.querySelector('#search-form');
   const searchInput = document.querySelector('#search-input');
   const searchQuestion = document.querySelector('#search-question');
@@ -222,4 +235,29 @@ document.addEventListener('DOMContentLoaded', function() {
       searchQuestion.value = '';
     });
   }
+
+  // Insert response cards into the response-container
+  const responseContainer = document.getElementById('response-container');
+
+  function insertResponseCards(cards) {
+    const isMobile = window.innerWidth <= 768;
+    const cardsPerButton = isMobile ? 3 : 9;
+
+    cards.forEach((card, index) => {
+      const answerContainer = document.getElementById(`answer-container-${Math.floor(index / cardsPerButton) + 1}`);
+      if (answerContainer) {
+        answerContainer.appendChild(card);
+      }
+
+      if ((index + 1) % cardsPerButton === 0) {
+        const backToTopContainer = document.createElement('div');
+        backToTopContainer.className = 'back-to-top-container';
+        backToTopContainer.innerHTML = '<a href="#top" class="back-to-top">Back to Top</a>';
+        answerContainer.appendChild(backToTopContainer);
+      }
+    });
+  }
+
+  // Insert the response cards and back-to-top buttons
+  insertResponseCards(Array.from(responseCards));
 });
