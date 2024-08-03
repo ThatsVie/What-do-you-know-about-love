@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM fully loaded and parsed');
 
   const truncateLength = 200;
+  let searchTerm = '';
+
   const responseCards = document.querySelectorAll('.response-card');
   console.log('Response Cards:', responseCards);
 
@@ -13,34 +15,41 @@ document.addEventListener('DOMContentLoaded', function() {
         const fullText = cardText.getAttribute('data-full-text');
         if (fullText) {
           const truncatedText = fullText.substring(0, truncateLength) + '...';
+          cardText.innerHTML = truncatedText;
 
-          if (fullText.length > truncateLength) {
-            cardText.innerHTML = truncatedText;
+          const readMoreLink = card.querySelector('.read-more');
+          readMoreLink.style.display = 'inline';
+          readMoreLink.tabIndex = 0; // Make the link focusable
 
-            const readMoreLink = card.querySelector('.read-more');
-            readMoreLink.style.display = 'inline';
-            readMoreLink.addEventListener('click', function(event) {
+          readMoreLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            toggleReadMore(cardText, fullText, truncatedText, readMoreLink);
+          });
+
+          // Allow keyboard activation
+          readMoreLink.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
               event.preventDefault();
-              console.log('Read More clicked');
-              if (cardText.innerHTML === truncatedText) {
-                cardText.innerHTML = fullText;
-                readMoreLink.textContent = 'Read Less';
-              } else {
-                cardText.innerHTML = truncatedText;
-                readMoreLink.textContent = 'Read More';
-              }
-            });
-          } else {
-            cardText.innerHTML = fullText;
-            card.querySelector('.read-more').style.display = 'none';
-          }
+              toggleReadMore(cardText, fullText, truncatedText, readMoreLink);
+            }
+          });
         }
       }
     });
   }
 
+  // Function to toggle "Read More" and "Read Less"
+  function toggleReadMore(cardText, fullText, truncatedText, readMoreLink) {
+    const isTruncated = cardText.innerHTML === truncatedText;
+    cardText.innerHTML = isTruncated ? fullText : truncatedText;
+    highlightText(cardText, searchTerm);
+    readMoreLink.textContent = isTruncated ? 'Read Less' : 'Read More';
+  }
+
   // Function to highlight text within an element and its children
   function highlightText(element, searchTerm) {
+    if (!searchTerm) return;
+
     const regex = new RegExp(`(${searchTerm})`, 'gi');
 
     // Recursively highlight text in the element and its children
@@ -71,34 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Search Results Cleared');
   }
 
-  // Function to insert "Back to Top" buttons at the correct intervals
-  function insertBackToTopButtons(cards, container) {
-    const isMobile = window.innerWidth <= 768;
-    const cardsPerButton = isMobile ? 3 : 6;
-
-    let count = 0;
-    let tempContainer = document.createElement('div');
-    tempContainer.className = 'row';
-
-    cards.forEach((card, index) => {
-      tempContainer.appendChild(card);
-      count++;
-
-      if (count === cardsPerButton || index === cards.length - 1) {
-        const backToTopContainer = document.createElement('div');
-        backToTopContainer.className = 'col-12 text-center my-3';
-        backToTopContainer.innerHTML = '<a href="#top" class="back-to-top">Back to Top</a>';
-        tempContainer.appendChild(backToTopContainer);
-        container.appendChild(tempContainer);
-
-        // Reset for the next group
-        tempContainer = document.createElement('div');
-        tempContainer.className = 'row';
-        count = 0;
-      }
-    });
-  }
-
   setupReadMoreLinks(responseCards);
 
   const questionLinks = document.querySelectorAll('.question-link');
@@ -121,7 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
           const relatedAnswers = document.querySelectorAll(`.${targetClass}`);
           console.log('Related Answers:', relatedAnswers);
           relatedAnswers.forEach(answer => {
-            searchContainer.appendChild(answer.cloneNode(true));
+            const clonedAnswer = answer.cloneNode(true);
+            setupReadMoreLinks([clonedAnswer]);
+            searchContainer.appendChild(clonedAnswer);
           });
 
           searchContainer.style.display = 'flex';
@@ -189,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
     searchForm.addEventListener('submit', function(event) {
       event.preventDefault();
       clearSearchResults(); // Clear previous search results
-      const searchTerm = searchInput.value.trim().toLowerCase();
+      searchTerm = searchInput.value.trim().toLowerCase();
       const searchQuestionValue = searchQuestion.value.trim().toLowerCase();
       console.log('Search Term:', searchTerm);
       console.log('Search Question Value:', searchQuestionValue);
@@ -335,3 +318,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   insertResponseCards(Array.from(responseCards));
 });
+
+
