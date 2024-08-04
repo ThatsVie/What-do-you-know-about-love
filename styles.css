@@ -2,19 +2,18 @@
 :root {
   --font-family: 'Source Sans Pro', serif;
   --font-family-secondary: 'Lobster', cursive;
-  --color-bold-pink: #C81450;   /* Bold Pink */
+  --color-bold-pink: #C81450;
   --color-pink: #c06583;
   --color-darker-pink: #610A27;
   --color-bolder-pink: #A71143;
-  --color-light-pink: #FFCCCB;   /* Light Pink */
-  --color-bold-blue: #063D6A;   /* Bold Blue */
-  --color-light-blue: #ADD8E6;   /* Light Blue */
-  --color-white: #FFFFFF;       /* White */
-  --color-light-gray: #9E9E9E;  /* Light Gray */
-  --color-dark-gray: #333333;   /* Dark Gray */
-  --color-tan: #D2B48C;         /* Tan */
-  --color-light-tan: #F5DEB3;   /* Light Tan */
-  
+  --color-light-pink: #FFCCCB;
+  --color-bold-blue: #063D6A;
+  --color-light-blue: #ADD8E6;
+  --color-white: #FFFFFF;
+  --color-light-gray: #9E9E9E;
+  --color-dark-gray: #333333;
+  --color-tan: #D2B48C;
+  --color-light-tan: #F5DEB3;
 }
 
 html {
@@ -31,7 +30,6 @@ body {
 .container {
   margin-top: 50px;
 }
-
 
 .response-container {
   padding: 20px;
@@ -132,7 +130,6 @@ body {
   background-color: var(--color-dark-gray) !important;
 }
 
-
 .bg-tan {
   background-color: var(--color-tan) !important;
 }
@@ -144,7 +141,6 @@ body {
 .img-height-60{
   height: 60px;
 }
-
 
 .romanceText {
   font-family: var(--font-family-secondary);
@@ -209,6 +205,7 @@ footer a:hover {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
+/* responses */
 .response {
   margin-bottom: 20px;
 }
@@ -245,8 +242,7 @@ footer a:hover {
   line-height: 1.6;
   flex-grow: 1; 
 }
-  
-/* Container for answer cards */
+
 .answer-container {
   display: flex;
   flex-wrap: wrap;
@@ -263,18 +259,17 @@ footer a:hover {
 
 @media (min-width: 576px) {
   .response-card {
-    flex: 1 1 calc(50% - 20px); /* 2 cards per row on small screens */
+    flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
 }
 
 @media (min-width: 768px) {
   .response-card {
-    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row on medium screens */
+    flex: 1 1 calc(33.333% - 20px);
     max-width: calc(33.333% - 20px);
   }
 }
-
 
 /* Questions List */
 .questions-list {
@@ -301,7 +296,7 @@ footer a:hover {
   color: var(--color-light-blue);
   outline: 2px solid var(--color-bold-pink);
   outline-offset: 2px;
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
@@ -424,7 +419,7 @@ footer a:hover {
   background-color: var(--color-bold-blue);
   color: var(--color-light-blue);
   border-color: var(--color-bold-blue);
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
@@ -482,7 +477,6 @@ footer a:hover {
   }
 }
 
-/*button*/
 /* Small Pink Button Styling */
 .btn-small-pink {
   color: var(--color-white);
@@ -503,13 +497,12 @@ footer a:hover {
   background-color: var(--color-bold-blue);
   color: var(--color-light-blue);
   border-color: var(--color-bold-blue);
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 .read-more {
-
   font-size: 1.2rem;
   color: var(--color-bold-pink);
   text-decoration: none;
@@ -538,7 +531,6 @@ footer a:hover {
   background-color: yellow;
   font-weight: bold;
 }
-
 
 .high-contrast-text {
   color: #000000;
