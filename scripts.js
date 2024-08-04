@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const fullText = cardText.getAttribute('data-full-text');
         if (fullText) {
           const truncatedText = fullText.substring(0, truncateLength) + '...';
-          cardText.innerHTML = truncatedText;
+          cardText.innerHTML = highlightText(truncatedText, searchTerm);
 
           const readMoreLink = card.querySelector('.read-more');
           readMoreLink.style.display = 'inline';
@@ -40,35 +40,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to toggle "Read More" and "Read Less"
   function toggleReadMore(cardText, fullText, truncatedText, readMoreLink) {
-    const isTruncated = cardText.innerHTML === truncatedText;
-    cardText.innerHTML = isTruncated ? fullText : truncatedText;
-    highlightText(cardText, searchTerm);
+    const isTruncated = cardText.innerHTML === highlightText(truncatedText, searchTerm);
+    cardText.innerHTML = isTruncated ? highlightText(fullText, searchTerm) : highlightText(truncatedText, searchTerm);
     readMoreLink.textContent = isTruncated ? 'Read Less' : 'Read More';
   }
 
-  // Function to highlight text within an element and its children
-  function highlightText(element, searchTerm) {
-    if (!searchTerm) return;
-
+  // Function to highlight text within a string
+  function highlightText(text, searchTerm) {
+    if (!searchTerm) return text;
     const regex = new RegExp(`(${searchTerm})`, 'gi');
-
-    // Recursively highlight text in the element and its children
-    function recursiveHighlight(node) {
-      if (node.nodeType === 3) { // Text node
-        const parent = node.parentNode;
-        const highlightedText = node.nodeValue.replace(regex, '<span class="highlight">$1</span>');
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = highlightedText;
-        while (tempDiv.firstChild) {
-          parent.insertBefore(tempDiv.firstChild, node);
-        }
-        parent.removeChild(node);
-      } else if (node.nodeType === 1 && node.childNodes) { // Element node
-        node.childNodes.forEach(child => recursiveHighlight(child));
-      }
-    }
-
-    recursiveHighlight(element);
+    return text.replace(regex, '<span class="highlight">$1</span>');
   }
 
   // Function to clear search results
@@ -211,14 +192,14 @@ document.addEventListener('DOMContentLoaded', function() {
             if (searchTerm) {
               // Highlight the search term in the cloned card
               const clonedTitle = answerClone.querySelector('.card-title');
-              highlightText(clonedTitle, searchTerm);
+              clonedTitle.innerHTML = highlightText(clonedTitle.innerHTML, searchTerm);
               const clonedTextElements = answerClone.querySelectorAll('.card-text');
               clonedTextElements.forEach(textElement => {
-                highlightText(textElement, searchTerm);
+                textElement.innerHTML = highlightText(textElement.innerHTML, searchTerm);
               });
               const clonedTags = answerClone.querySelector('.tags');
               if (clonedTags) {
-                highlightText(clonedTags, searchTerm);
+                clonedTags.innerHTML = highlightText(clonedTags.innerHTML, searchTerm);
               }
             }
 
@@ -318,5 +299,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   insertResponseCards(Array.from(responseCards));
 });
-
 
