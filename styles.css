@@ -617,3 +617,14 @@ footer a:hover {
   color: var(--color-bold-pink);
   margin-right: 10px;
 }
+
+#vision p i {
+  margin-right: 10px;
+  color: var(--color-bold-pink);
+  font-size: 1.2rem;
+}
+
+#vision p {
+  display: flex;
+  align-items: center;
+}
