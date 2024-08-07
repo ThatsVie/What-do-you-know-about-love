@@ -56,8 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
   function clearSearchResults() {
     const searchContainer = document.querySelector('#search-results');
     const searchResultsSection = document.querySelector('#search-results-container');
+    const noResultsSection = document.querySelector('#no-results');
     searchContainer.innerHTML = '';
     searchResultsSection.style.display = 'none';
+    noResultsSection.style.display = 'none';
     console.log('Search Results Cleared');
   }
 
@@ -66,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const questionLinks = document.querySelectorAll('.question-link');
   const searchResultsSection = document.querySelector('#search-results-container');
   const searchContainer = document.querySelector('#search-results');
+  const noResultsSection = document.querySelector('#no-results');
 
   console.log('Question Links:', questionLinks);
   console.log('Search Results Section:', searchResultsSection);
@@ -84,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log('Related Answers:', relatedAnswers);
           relatedAnswers.forEach(answer => {
             const clonedAnswer = answer.cloneNode(true);
-            setupReadMoreLinks([clonedAnswer]);
             searchContainer.appendChild(clonedAnswer);
           });
 
@@ -95,7 +97,9 @@ document.addEventListener('DOMContentLoaded', function() {
           if (relatedAnswers.length > 0) {
             searchResultsSection.style.display = 'block';
           } else {
-            searchResultsSection.style.display = 'none';
+            searchResultsSection.style.display = 'block';
+            noResultsSection.style.display = 'block';
+            console.log('No Results Found');
           }
 
           searchResultsSection.scrollIntoView({ behavior: 'smooth' });
@@ -217,7 +221,8 @@ document.addEventListener('DOMContentLoaded', function() {
         searchResultsSection.style.display = 'block';
         console.log('Search Results Section Displayed');
       } else {
-        searchResultsSection.style.display = 'none';
+        searchResultsSection.style.display = 'block';
+        noResultsSection.style.display = 'block';
         console.log('No Results Found');
       }
 
@@ -234,6 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
     clearResultsButton.addEventListener('click', function() {
       searchContainer.innerHTML = '';
       searchResultsSection.style.display = 'none';
+      noResultsSection.style.display = 'none';
       searchInput.value = '';
       searchQuestion.value = '';
     });
@@ -299,4 +305,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   insertResponseCards(Array.from(responseCards));
 });
+
 

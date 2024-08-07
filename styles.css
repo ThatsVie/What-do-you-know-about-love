@@ -48,6 +48,10 @@ body {
 .font-22 {
   font-size: 22px;
 }
+
+.font-30 {
+  font-size: 30px;
+}
 /* Text Colors */
 .text-bold-pink {
   color: var(--color-bold-pink) !important;
