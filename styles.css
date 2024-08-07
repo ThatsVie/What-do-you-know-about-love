@@ -632,3 +632,14 @@ footer a:hover {
   display: flex;
   align-items: center;
 }
+
+.divider {
+  border-top: 2px solid #C81450;
+  margin: 1.5rem 0;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
