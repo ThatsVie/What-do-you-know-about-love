@@ -17,19 +17,23 @@ Welcome to "What Do You Know About Love?", a project dedicated to exploring and 
 ## Features and Functionality
 
 ### Interactive Response Cards
+
 - **"Read More" Links**: Response cards with over 200 characters include a "Read More" link to expand truncated text, allowing users to view the full content of longer responses. This feature is designed to be accessible, with keyboard navigation support.
   
 ### Search and Navigation
+
 - **Search Functionality**: Users can search through the responses by keywords or by selecting specific questions. The search results are dynamically displayed on the page, with relevant terms highlighted.
 
 - **Smooth Scrolling**: The site supports smooth scrolling for navigation between different sections, enhancing the user experience.
 
 ### Question Links and Dynamic Content Loading
+
 - **Question Links**: Users can click on specific questions to filter and display related responses, ensuring they can easily find content that interests them.
 
 - **Dynamic Content**: The site dynamically loads content based on user interaction, with "Back to Top" buttons inserted at appropriate intervals for ease of navigation.
 
 ### Custom Form and Google Integration
+
 - **Custom Form**: A Google Form is embedded on the site to collect responses. The form is simple and accessible, allowing users to share their thoughts with minimal barriers.
 
 - **Google Sheets Integration**: The responses are stored in a connected Google Sheet, which serves as the project's database.
@@ -39,11 +43,17 @@ Welcome to "What Do You Know About Love?", a project dedicated to exploring and 
 ## Project Structure
 
 - `index.html`: The main landing page that introduces the project and showcases a selection of response cards.
+
 - `about/index.html`: Provides an overview of the project's mission, vision, and the inspiration behind it along with our FAQ Section
+
 - `responses/index.html`: Displays the full collection of user-submitted responses and offers filtering by specific questions as well as keywords and tags.
+
 - `submit/index.html`: Contains the embedded Google Form for users to submit their responses.
+
 - `support/index.html`: Information on how users can support the project, including donation links, social media follow options and our contact information.
+
 - `styles.css`: Contains all custom styles for the website, ensuring a consistent and visually appealing design across all pages. 
+
 - `scripts.js`: JavaScript file handles various dynamic functionalities, including managing "Read More" and "Read Less" interactions for response cards, implementing search functionality with highlighted terms, and enabling smooth scrolling for navigation and search results. It also dynamically inserts "Back to Top" buttons and organizes response cards based on screen size for a seamless user experience.
 
 ## Submission Management and Processing
@@ -51,14 +61,17 @@ Welcome to "What Do You Know About Love?", a project dedicated to exploring and 
 The project uses a combination of Google Forms, Google Sheets, and Google Apps Script to manage and process submissions:
 
 - **Google Forms**: Collects user responses in a secure and user-friendly manner.
+
 - **Google Sheets**: Stores the responses, acting as the database for the project.
+
 - **Google Apps Script**: Partially automates the creation of response cards based on the submissions, reducing manual work and ensuring consistency. Manual steps are still taken to add images, alt text, and tags for accessibility.
 
 This approach balances automation with manual oversight, maintaining the quality and personalization of each response card. As the project grows, additional tools may be considered to handle increased demands.
 
-## Support and Contributions
+## Support
 
 Your support is invaluable to the growth and success of "What Do You Know About Love?". There are several ways to get involved:
+
 - **Submit a Response**: Share your personal experiences and perspectives on love by submitting a response [here](https://whatdoyouknowaboutlove.com/submit).
 
 - **Follow and Share**: Follow us on [Instagram](https://instagram.com/whatdoyouknowaboutlove) and help spread the word by sharing our content.
