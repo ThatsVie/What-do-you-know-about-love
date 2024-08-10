@@ -59,9 +59,10 @@ This approach balances automation with manual oversight, maintaining the quality
 ## Support and Contributions
 
 Your support is invaluable to the growth and success of "What Do You Know About Love?". There are several ways to get involved:
+- **Submit a Response**: Share your personal experiences and perspectives on love by submitting a response [here](https://whatdoyouknowaboutlove.com/submit).
 
-- **Donate**: Financial contributions help cover the costs of maintaining and improving the project. You can donate through [Stripe](https://donate.stripe.com/bIY2aCc186hG1xe5kk) or [Venmo](https://venmo.com/whatdoyouknowaboutlove).
 - **Follow and Share**: Follow us on [Instagram](https://instagram.com/whatdoyouknowaboutlove) and help spread the word by sharing our content.
+
 - **Collaborate**: We welcome collaboration opportunities. If you have ideas or projects you'd like to discuss, please reach out to us at [info@whatdoyouknowaboutlove.com](mailto:info@whatdoyouknowaboutlove.com).
 
 Thank you for being a part of our journey to explore and celebrate the many facets of love. Together, we can create a more compassionate, connected, and loving world.
