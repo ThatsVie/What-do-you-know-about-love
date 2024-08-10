@@ -9,6 +9,7 @@ Welcome to "What Do You Know About Love?", a project dedicated to exploring and 
 - [Styling and Design](#styling-and-design)
 - [Submission Management and Processing](#submission-management-and-processing)
 - [Support This Project](#support-this-project)
+- [Author](#author)
 
 ## Overview
 
@@ -78,4 +79,9 @@ Your support is invaluable to the growth and success of "What Do You Know About 
 
 - **Collaborate**: We welcome collaboration opportunities. If you have ideas or projects you'd like to discuss, please reach out to us at [info@whatdoyouknowaboutlove.com](mailto:info@whatdoyouknowaboutlove.com).
 
-Thank you for being a part of our journey to explore and celebrate the many facets of love. Together, we can create a more compassionate, connected, and loving world.
+## Author
+
+This project was created and is maintained by Vie Paula. You can check out more of my work on [GitHub](https://github.com/ThatsVie).
+
+
+**Thank you for being a part of our journey to explore and celebrate the many facets of love. Together, we can create a more compassionate, connected, and loving world.**
