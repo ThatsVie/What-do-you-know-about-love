@@ -8,7 +8,7 @@ Welcome to "What Do You Know About Love?", a project dedicated to exploring and 
 - [Project Structure](#project-structure)
 - [Styling and Design](#styling-and-design)
 - [Submission Management and Processing](#submission-management-and-processing)
-- [Support and Contributions](#support-and-contributions)
+- [Support This Project](#support-this-project)
 
 ## Overview
 
@@ -68,7 +68,7 @@ The project uses a combination of Google Forms, Google Sheets, and Google Apps S
 
 This approach balances automation with manual oversight, maintaining the quality and personalization of each response card. As the project grows, additional tools may be considered to handle increased demands.
 
-## Support
+## Support This Project
 
 Your support is invaluable to the growth and success of "What Do You Know About Love?". There are several ways to get involved:
 
