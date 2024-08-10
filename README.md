@@ -6,7 +6,6 @@ Welcome to "What Do You Know About Love?", a project dedicated to exploring and 
 - [Overview](#overview)
 - [Features and Functionality](#features-and-functionality)
 - [Project Structure](#project-structure)
-- [Styling and Design](#styling-and-design)
 - [Submission Management and Processing](#submission-management-and-processing)
 - [Support This Project](#support-this-project)
 - [Author](#author)
@@ -15,17 +14,32 @@ Welcome to "What Do You Know About Love?", a project dedicated to exploring and 
 
 "What Do You Know About Love?" is an inclusive platform where individuals can contribute their stories, insights, and experiences related to love. The project collects responses through a Google Form, processes them using Google Sheets and a custom Google Apps Script, and displays them as response cards on the website. The site is designed to be accessible, responsive, and visually engaging, reflecting the beauty and diversity of love.
 
+
+https://github.com/user-attachments/assets/938a4082-7db8-44a6-ba5f-ccbf635ed801
+
+
 ## Features and Functionality
 
 ### Interactive Response Cards
 
 - **"Read More" Links**: Response cards with over 200 characters include a "Read More" link to expand truncated text, allowing users to view the full content of longer responses. This feature is designed to be accessible, with keyboard navigation support.
+
+
+https://github.com/user-attachments/assets/88dd2e7a-4f21-4969-a9e8-9d8c643b42a9
+
+
   
 ### Search and Navigation
 
 - **Search Functionality**: Users can search through the responses by keywords or by selecting specific questions. The search results are dynamically displayed on the page, with relevant terms highlighted.
 
 - **Smooth Scrolling**: The site supports smooth scrolling for navigation between different sections, enhancing the user experience.
+
+
+
+https://github.com/user-attachments/assets/b0e6a3b7-22dc-409d-bbb2-c97276b1101b
+
+
 
 ### Question Links and Dynamic Content Loading
 
