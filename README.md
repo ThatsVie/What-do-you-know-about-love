@@ -69,7 +69,7 @@ https://github.com/user-attachments/assets/b8c8a702-df7c-48d4-927f-7b7e0390d5c7
 
 ## Project Structure
 
-- `index.html`: The main landing page that introduces the project and showcases a selection of response cards.
+- `index.html`: The main landing page that introduces the project, showcases a selection of response cards and includes a carousel of feedback we've received.
 
 - `about/index.html`: Provides an overview of the project's mission, vision, and the inspiration behind it along with our FAQ Section
 
