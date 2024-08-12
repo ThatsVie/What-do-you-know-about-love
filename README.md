@@ -1,6 +1,8 @@
-![Screenshot 2024-08-11 141534](https://github.com/user-attachments/assets/358bb980-8fbc-47fd-a70d-6f6ed4e8ceb4)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a22c21d9-4cdf-48f5-b2ab-0b6e6be52fd4" alt="WhatDoYouKnowAboutLove" />
+</p>
 
-Welcome to "What Do You Know About Love?", a project dedicated to exploring and celebrating the diverse expressions of love. This website invites people from all walks of life to share their personal experiences and perspectives on love, creating a rich archive of stories that inspire and connect.
+**Welcome to "What Do You Know About Love?", a project dedicated to exploring and celebrating the diverse expressions of love. This website invites people from all walks of life to share their personal experiences and perspectives on love, creating a rich archive of stories that inspire and connect.**
 
 ## Table of Contents
 - [Overview](#overview)
