@@ -18,6 +18,9 @@
 
 "What Do You Know About Love?" is an inclusive platform where individuals can contribute their stories, insights, and experiences related to love. The project collects responses through a Google Form, processes them using Google Sheets and a custom Google Apps Script, and displays them as response cards on the website. The site is designed to be accessible, responsive, and visually engaging, reflecting the beauty and diversity of love.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fabe8bd0-257a-4210-9674-cb3c220bf35d" />
+</p>
 
 https://github.com/user-attachments/assets/938a4082-7db8-44a6-ba5f-ccbf635ed801
 
