@@ -1,4 +1,4 @@
-# What Do You Know About Love?
+![Screenshot 2024-08-11 141534](https://github.com/user-attachments/assets/358bb980-8fbc-47fd-a70d-6f6ed4e8ceb4)
 
 Welcome to "What Do You Know About Love?", a project dedicated to exploring and celebrating the diverse expressions of love. This website invites people from all walks of life to share their personal experiences and perspectives on love, creating a rich archive of stories that inspire and connect.
 
@@ -56,16 +56,6 @@ https://github.com/user-attachments/assets/3e4bce97-c539-4125-ba3c-2878d432b7ed
 
 
 https://github.com/user-attachments/assets/b8c8a702-df7c-48d4-927f-7b7e0390d5c7
-
-
-
-### Custom Form and Google Integration
-
-- **Custom Form**: A Google Form is embedded on the site to collect responses. The form is simple and accessible, allowing users to share their thoughts with minimal barriers.
-
-- **Google Sheets Integration**: The responses are stored in a connected Google Sheet, which serves as the project's database.
-
-- **Google Apps Script**: A custom script automates the generation of HTML for response cards, streamlining the content creation process.
 
 ## Project Structure
 
