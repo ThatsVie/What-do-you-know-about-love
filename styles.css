@@ -20,11 +20,34 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Body Styles */
-body {
-  background-color: var(--color-light-tan);
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--color-light-tan);
   color: var(--color-dark-gray);
   font-family: var(--font-family);
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-bold-pink) 0px,
+    var(--color-bold-pink) 10px,
+    var(--color-light-tan) 10px,
+    var(--color-light-tan) 20px
+  );
+  opacity: 0.03;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .container {
@@ -166,8 +189,12 @@ body {
 }
 
 /* Header Styles */
+
 header {
   background-color: var(--color-bold-pink);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -180,6 +207,7 @@ h2 {
   border-radius: 10px;
   padding: 1rem;
 }
+
 
 h3.card-title {
   font-size: 20px;
@@ -197,6 +225,9 @@ h1.card-title {
 /* Footer Styles */
 footer {
   background-color: var(--color-bold-pink);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
