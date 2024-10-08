@@ -31,6 +31,21 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--color-light-tan);
+  color: var(--color-dark-gray);
+  font-family: var(--font-family);
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -46,9 +61,14 @@ body::before {
     var(--color-light-tan) 20px
   );
   opacity: 0.03;
-  z-index: -1;
+  z-index: -1; 
   pointer-events: none;
 }
+
+.back-to-top {
+  z-index: 1000;
+}
+
 
 .container {
   margin-top: 50px;
