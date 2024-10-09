@@ -557,6 +557,30 @@ footer a:hover {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
+.btn-small-blue {
+  color: var(--color-white);
+  border: 2px solid var(--color-bold-blue);
+  background-color: var(--color-bold-blue);
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  display: inline-block; 
+  margin: 10px 5px; 
+}
+
+.btn-small-blue:hover {
+  background-color: var(--color-bold-pink);
+  color: var(--color-light-pink); /* Color change for text */
+  border-color: var(--color-bold-pink); /* Change border to pink */
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
 .read-more {
   font-size: 1.2rem;
   color: var(--color-bold-pink);
