@@ -74,7 +74,8 @@ body::before {
   margin-top: 50px;
 }
 
-.response-container {
+.response-container,
+#search-results {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
