@@ -16,20 +16,6 @@
   --color-light-tan: #F5DEB3;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  background: var(--color-light-tan);
-  color: var(--color-dark-gray);
-  font-family: var(--font-family);
-  position: relative;
-  z-index: 1;
-  overflow-x: hidden;
-}
 
 html {
   scroll-behavior: smooth;
@@ -53,15 +39,11 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(
-    45deg,
-    var(--color-bold-pink) 0px,
-    var(--color-bold-pink) 10px,
-    var(--color-light-tan) 10px,
-    var(--color-light-tan) 20px
-  );
-  opacity: 0.03;
-  z-index: -1; 
+  background-image: url('images/lacy.webp');
+  background-repeat: repeat;
+  background-size: 250px 250px;
+  opacity: 0.1;
+  z-index: -1;
   pointer-events: none;
 }
 
