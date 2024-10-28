@@ -140,9 +140,7 @@ body::before {
   color: var(--color-pink) !important;
 }
 
-.text-light-pink {
-  color: var(--color-light-pink) !important;
-}
+
 
 .text-darker-pink {
   color: var(--color-darker-pink) !important;
@@ -172,13 +170,6 @@ body::before {
   color: var(--color-dark-gray) !important;
 }
 
-.text-tan {
-  color: var(--color-tan) !important;
-}
-
-.text-light-tan {
-  color: var(--color-light-tan) !important;
-}
 
 /* Background Colors */
 .bg-bold-pink {
