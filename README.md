@@ -112,7 +112,7 @@ Your support is invaluable to the growth and success of "What Do You Know About 
 
 ## About the Developer
 
-Hey, I'm Vie Paula, a software engineer with a passion for creating meaningful, user-centered web experiences. With a unique background in massage therapy, I approach each project with care and attention to detail, focusing on accessibility and connection. You can explore more of my work in my [Portfolio](https://github.com/ThatsVie).
+Hi! I'm Vie P, a software engineer with a passion for creating meaningful, user-centered web experiences. With a background in massage therapy, I approach each project with care and attention to detail, focusing on accessibility and connection.
 
 
 **Thank you for being a part of our journey to explore and celebrate the many facets of love. Together, we can create a more compassionate, connected, and loving world.**
