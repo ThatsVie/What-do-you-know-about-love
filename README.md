@@ -107,7 +107,7 @@ Your support is invaluable to the growth and success of "What Do You Know About 
 
 - **Follow and Share**: Follow us on [Instagram](https://instagram.com/whatdoyouknowaboutlove) and help spread the word by sharing our content.
 
-- **Collaborate**: I welcome collaboration opportunities. If you have ideas or projects you'd like to discuss, please reach out to us at [info@whatdoyouknowaboutlove.com](mailto:info@whatdoyouknowaboutlove.com).
+- **Collaborate**: I welcome collaboration opportunities. If you have ideas or projects you'd like to discuss, please reach out to us at [tellusaboutlove@gmail.com](mailto:tellusaboutlove@gmail.com).
 
 
 ## About the Developer
