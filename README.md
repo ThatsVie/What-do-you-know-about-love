@@ -1,7 +1,12 @@
-
+<div align="center">
+  
 ![Screenshot 2024-10-28 125928](https://github.com/user-attachments/assets/eef74794-9213-4e9b-9c76-90219de14503)
 
 <br>
+
+**Live Project:** [What Do You Konw About Love?](https://whatdoyouknowaboutlove.com/)
+
+</div>
 
 ## Table of Contents
 - [Project Overview](#project-overview)
