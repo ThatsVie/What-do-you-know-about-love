@@ -4,7 +4,7 @@
 
 <br>
 
-**Live Project:** [What Do You Konw About Love?](https://whatdoyouknowaboutlove.com/)
+**Live Website:** [What Do You Konw About Love?](https://whatdoyouknowaboutlove.com/)
 
 </div>
 
