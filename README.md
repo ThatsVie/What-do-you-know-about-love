@@ -1,6 +1,7 @@
 <div align="center">
   
-![Screenshot 2024-10-28 125928](https://github.com/user-attachments/assets/eef74794-9213-4e9b-9c76-90219de14503)
+![whatdoyouknowaboutlove com_ (1)](https://github.com/user-attachments/assets/6bad14f7-83b1-4c69-b373-89c37317414f)
+
 
 <br>
 
@@ -24,9 +25,7 @@
 
 ## Project Overview
 
-"What Do You Know About Love?" is more than just a project; it’s a heartfelt endeavor inspired by a deep appreciation for love in all its forms. From friendships and family bonds to self-love and social causes, this project aims to celebrate the diversity of love and create a space where people from all walks of life can share their experiences. By bringing these stories together, I hope to foster a sense of connection and compassion in our community.
-
-This project was inspired by my sister Patrisia, who exemplified love through her commitment to justice, authenticity, and kindness. Her legacy fuels my mission to create a platform where love, in its many facets, can be explored and appreciated. 
+At What Do You Know About Love? we celebrate the diversity of love in all its manifestations. Our platform invites individuals to share their personal experiences and perspectives on love through a simple form. Participants select a question about love, provide their answers, and optionally include identifiers for context. We then format these responses into cards, enhanced with DALL-E generated images. Explore the many facets of love shared by people from all walks of life and find inspiration in their wisdom and experiences.
 
 
 <p align="center">
