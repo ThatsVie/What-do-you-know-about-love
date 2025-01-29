@@ -1,11 +1,8 @@
 <div align="center">
-  
+
 ![whatdoyouknowaboutlove com_ (1)](https://github.com/user-attachments/assets/6bad14f7-83b1-4c69-b373-89c37317414f)
 
-
-<br>
-
-**Live Website:** [What Do You Konw About Love?](https://whatdoyouknowaboutlove.com/)
+# 🌐 **[Website](https://whatdoyouknowaboutlove.com/)**
 
 </div>
 
