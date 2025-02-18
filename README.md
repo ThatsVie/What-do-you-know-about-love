@@ -117,3 +117,7 @@ Hi! I'm Vie P, a software engineer with a passion for creating meaningful, user-
 
 
 **Thank you for being a part of our journey to explore and celebrate the many facets of love. Together, we can create a more compassionate, connected, and loving world.**
+
+With love, 
+<br>
+**[Vie P.](https://whatdoyouknowaboutlove.com/viepaula/)**
