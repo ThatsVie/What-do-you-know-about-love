@@ -23,9 +23,9 @@
 ---
 
 ## Project Overview
-*What Do You Know About Love?* is a digital platform exploring love through personal reflections and AI-generated imagery. By pairing deeply human stories with AI visuals, this project challenges assumptions about art, emotion, and authenticity while inviting contributors and audiences to reconsider how love is expressed, perceived, and reimagined in a rapidly evolving world/
+*What Do You Know About Love?* is a digital platform exploring love through personal reflections and AI-generated imagery. By pairing deeply human stories with AI visuals, this project challenges assumptions about art, emotion, and authenticity while inviting contributors and audiences to reconsider how love is expressed, perceived, and reimagined in a rapidly evolving world.
 
-Users select a question about love, submit their response, and have their words transformed into response cards accompanied by AI-generated visuals. The website serves as an evolving interactive archive, amplifying perspectives that highlight the many forms and expressions of love.  
+Participants select a question about love, submit their response, and have their words transformed into response cards accompanied by AI-generated visuals. The website serves as an evolving interactive archive, amplifying perspectives that highlight the many forms and expressions of love.  
 
 📖 **Learn more about the project:** [About What Do You Know About Love?](https://whatdoyouknowaboutlove.com/about/)  
 
@@ -37,19 +37,16 @@ Users select a question about love, submit their response, and have their words 
 - Responses are transformed into readable cards that preserve contributor anonymity (if chosen) while adding visual depth to each story.
 - Submissions over 200 characters include a "Read More" option, enhancing accessibility while allowing visitors to fully engage with each response.
 
-https://github.com/user-attachments/assets/88dd2e7a-4f21-4969-a9e8-9d8c643b42a9
 
 
 ### **Search and Navigation**
 - Users can search through responses by **keywords** or by selecting **specific questions**.
 - **Smooth Scrolling & Back to Top Navigation** for a seamless browsing experience.
 
-https://github.com/user-attachments/assets/b0e6a3b7-22dc-409d-bbb2-c97276b1101b
 
 ### **Question Links and Dynamic Content Loading**
 - Clicking on any **question category** loads related responses, creating an intuitive way to explore content.
 
-https://github.com/user-attachments/assets/3e4bce97-c539-4125-ba3c-2878d432b7ed
 
 ---
 
@@ -112,7 +109,7 @@ Ways you can help:
 
 I approach technology with a focus on connection, accessibility, and care. This project is a personal exploration of love in its many forms, and I’m honored to share it with the world.  
 
-** Thank you for being part of this journey. Your stories, engagement, and support help keep love alive, evolving, and shared.**  
+**Thank you for being part of this journey. Your stories, engagement, and support help keep love alive, evolving, and shared.**  
 
 With love, 
 <br>
