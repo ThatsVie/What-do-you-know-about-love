@@ -1,12 +1,13 @@
-
+<div align="center">
 
 # 🌐 **[What Do You Know About Love?](https://whatdoyouknowaboutlove.com/)**  
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/6bad14f7-83b1-4c69-b373-89c37317414f" alt="Website Screenshot" />
+![whatdoyouknowaboutlove com](https://github.com/user-attachments/assets/3dc81a19-d394-4d72-97cc-178fbfcdd4fa)
+
+
 </div>
 
-## **Table of Contents**
+## Table of Contents
 - [Project Overview](#project-overview)
 - [Features and Functionality](#features-and-functionality)
   - [Interactive Response Cards](#interactive-response-cards)
@@ -33,18 +34,18 @@ Participants select a question about love, submit their response, and have their
 
 ## Features and Functionality
 
-### **Interactive Response Cards**
+### Interactive Response Cards
 - Responses are transformed into readable cards that preserve contributor anonymity (if chosen) while adding visual depth to each story.
 - Submissions over 200 characters include a "Read More" option, enhancing accessibility while allowing visitors to fully engage with each response.
 
 
 
-### **Search and Navigation**
+### Search and Navigation
 - Users can search through responses by **keywords** or by selecting **specific questions**.
 - **Smooth Scrolling & Back to Top Navigation** for a seamless browsing experience.
 
 
-### **Question Links and Dynamic Content Loading**
+### Question Links and Dynamic Content Loading
 - Clicking on any **question category** loads related responses, creating an intuitive way to explore content.
 
 
@@ -104,7 +105,7 @@ Ways you can help:
 
 ---
 
-## **About the Developer**
+## About the Developer
  Hi, I’m **Vie P.**, a software engineer with a passion for building meaningful, user-centered digital experiences. *What Do You Know About Love?* began as a school project but has grown into a space for love, reflection, and storytelling.  
 
 I approach technology with a focus on connection, accessibility, and care. This project is a personal exploration of love in its many forms, and I’m honored to share it with the world.  
