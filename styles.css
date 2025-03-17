@@ -1,27 +1,27 @@
 /* Variables */
 :root {
-  --font-family: 'Source Sans Pro', serif;
-  --font-family-secondary: 'Lobster', cursive;
-  --color-bold-pink: #C81450;
+  --font-family: "Source Sans Pro", serif;
+  --font-family-secondary: "Lobster", cursive;
+  --color-bold-pink: #c81450;
   --color-pink: #c06583;
-  --color-darker-pink: #610A27;
-  --color-bolder-pink: #A71143;
-  --color-light-pink: #FFCCCB;
-  --color-bold-blue: #063D6A;
-  --color-light-blue: #ADD8E6;
-  --color-white: #FFFFFF;
-  --color-light-gray: #9E9E9E;
+  --color-darker-pink: #610a27;
+  --color-bolder-pink: #a71143;
+  --color-light-pink: #ffcccb;
+  --color-bold-blue: #063d6a;
+  --color-light-blue: #add8e6;
+  --color-white: #ffffff;
+  --color-light-gray: #9e9e9e;
   --color-dark-gray: #333333;
-  --color-tan: #D2B48C;
-  --color-light-tan: #F5DEB3;
+  --color-tan: #d2b48c;
+  --color-light-tan: #f5deb3;
 }
-
 
 html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   background: var(--color-light-tan);
@@ -33,13 +33,13 @@ html, body {
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('images/laceyheartquestion.webp');
+  background-image: url("images/laceyheartquestion.webp");
   background-repeat: repeat;
   background-size: 250px 250px;
   opacity: 0.1;
@@ -50,7 +50,6 @@ body::before {
 .back-to-top {
   z-index: 1000;
 }
-
 
 .container {
   margin-top: 50px;
@@ -77,7 +76,7 @@ body::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-} 
+}
 
 .burger-icon {
   color: var(--color-white);
@@ -97,7 +96,6 @@ body::before {
     transform: scale(1);
   }
 }
-
 
 .navbar-toggler {
   position: relative;
@@ -119,7 +117,6 @@ body::before {
   z-index: 10;
 }
 
-
 .font-18 {
   font-size: 18px;
 }
@@ -139,8 +136,6 @@ body::before {
 .text-pink {
   color: var(--color-pink) !important;
 }
-
-
 
 .text-darker-pink {
   color: var(--color-darker-pink) !important;
@@ -169,7 +164,6 @@ body::before {
 .text-dark-gray {
   color: var(--color-dark-gray) !important;
 }
-
 
 /* Background Colors */
 .bg-bold-pink {
@@ -212,7 +206,7 @@ body::before {
   background-color: var(--color-light-tan) !important;
 }
 
-.img-height-60{
+.img-height-60 {
   height: 60px;
 }
 
@@ -227,7 +221,7 @@ body::before {
 }
 
 .nav-link:hover {
-  background-color: var(--color-bold-blue); 
+  background-color: var(--color-bold-blue);
   color: var(--color-light-blue);
   outline: 2px solid var(--color-tan);
   transform: scale(1.1); /* Slightly enlarge on hover */
@@ -254,7 +248,6 @@ h2 {
   border-radius: 10px;
   padding: 1rem;
 }
-
 
 h3.card-title {
   font-size: 20px;
@@ -319,10 +312,10 @@ footer a:hover {
 }
 
 .card-text {
-  font-family: 'Source Sans Pro', serif;
+  font-family: "Source Sans Pro", serif;
   color: var(--color-dark-gray);
   line-height: 1.6;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .answer-container {
@@ -370,7 +363,9 @@ footer a:hover {
   padding: 1rem;
   display: block;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .questions-list a:hover {
@@ -420,7 +415,8 @@ footer a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#search-input, #search-question {
+#search-input,
+#search-question {
   flex: 1 1 auto;
   min-width: 200px;
   margin-bottom: 10px;
@@ -440,26 +436,28 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   padding: 0 10px;
-  height: 40px; 
-  border-radius: 4px 0 0 4px; 
+  height: 40px;
+  border-radius: 4px 0 0 4px;
   box-sizing: border-box;
 }
 
 .form-control {
   border: 1px solid var(--color-light-gray);
-  padding: 0 10px; 
+  padding: 0 10px;
   font-size: 16px;
-  box-sizing: border-box; 
-  height: 40px; 
-  border-radius: 0 4px 4px 0; 
-  outline: none; 
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 0 4px 4px 0;
+  outline: none;
 }
 
-.form-control:focus, #search-question:focus {
-  box-shadow: none; 
+.form-control:focus,
+#search-question:focus {
+  box-shadow: none;
 }
 
-.input-group:focus-within .form-control, #search-question:focus {
+.input-group:focus-within .form-control,
+#search-question:focus {
   border-color: var(--color-bold-pink);
   box-shadow: 0 0 0 2px var(--color-bold-pink);
 }
@@ -489,7 +487,9 @@ footer a:hover {
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.4s, color 0.4s;
+  transition:
+    background-color 0.4s,
+    color 0.4s;
   margin-bottom: 10px;
   height: 40px;
   display: flex;
@@ -570,9 +570,11 @@ footer a:hover {
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.4s, color 0.4s;
-  display: inline-block; 
-  margin: 10px 5px; 
+  transition:
+    background-color 0.4s,
+    color 0.4s;
+  display: inline-block;
+  margin: 10px 5px;
 }
 
 .btn-small-pink:hover {
@@ -594,9 +596,11 @@ footer a:hover {
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.4s, color 0.4s;
-  display: inline-block; 
-  margin: 10px 5px; 
+  transition:
+    background-color 0.4s,
+    color 0.4s;
+  display: inline-block;
+  margin: 10px 5px;
 }
 
 .btn-small-blue:hover {
@@ -644,7 +648,7 @@ footer a:hover {
 
 .high-contrast-link {
   color: var(--color-bold-blue);
-  text-decoration: underline; 
+  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -658,8 +662,8 @@ footer a:hover {
   display: block;
   margin: 20px auto;
   height: auto;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-  transition: transform 0.3s ease; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .logo-image:hover {
@@ -735,13 +739,11 @@ footer a:hover {
   align-items: center;
 }
 
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: var(--color-bold-pink);
   border-radius: 50%;
 }
-
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -770,7 +772,7 @@ footer a:hover {
 }
 
 .carousel-control-next {
-  right: -20px
+  right: -20px;
 }
 
 .form-loader {
@@ -793,7 +795,10 @@ footer a:hover {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-

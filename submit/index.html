@@ -1,160 +1,289 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Share your personal experiences and perspectives on love. Submit your responses to our carefully designed questions and contribute to our growing collection of heartfelt stories.">
-  <title>Submit - What Do You Know About Love?</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="icon" type="image/webp" href="../images/favicon.ico">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-7QWWK7C5L9');
-  </script>
-  <!-- End Google Analytics -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
-</head>
-
-<body id="top">
-  <!-- Header Section -->
-  <header class="container-fluid text-white pb-5">
-    <div class="container-lg h-100 d-flex flex-column justify-content-between">
-      <nav class="d-flex flex-column flex-sm-row pt-4">
-        <a href="/" class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-          <img class="m-2 rounded-top rounded-bottom logo-image" src="../images/logo60.webp" alt="logo-Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
-        </a>
-        <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle main navigation">
-          <div class="burger-container">
-            <span class="menu-label">Menu</span>
-            <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-        </button>
-        <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="mainNav">
-          <ul class="navbar-nav ml-auto flex-sm-row align-items-center font-weight-bold">
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/about">ABOUT</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/responses">RESPONSES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/submit">SUBMIT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/viepaula">PORTFOLIO</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="position-relative pt-4 pb-5">
-        <a href="/" class="no-underline">
-          <h1 class="text-center romanceText">What Do You Know About Love?</h1>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content Section -->
-  <main class="container">
-    <div class="google-sheet-container">
-      <h2 class="text-center text-white mb-5" tabindex="0">Submit a Response</h2>
-    
-      <!-- Loader -->
-      <div id="form-loader" class="form-loader">
-        <div class="spinner"></div>
-        <p>Loading form...</p>
-      </div>
-    
-      <!-- Google Form -->
-      <div id="form-container" style="display: none;">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJWRDQGB3w72Ni3hlIljfFhrowOEpHq2USUO0C2hpx1qAqzQ/viewform?embedded=true" 
-          width="100%" height="1300" frameborder="0" marginheight="0" marginwidth="0" title="Google Form to submit responses"
-          onload="hideLoader()">
-        </iframe>
-      </div>
-    </div>
-    
-    <!-- Script to Hide Loader -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Share your personal experiences and perspectives on love. Submit your responses to our carefully designed questions and contribute to our growing collection of heartfelt stories."
+    />
+    <title>Submit - What Do You Know About Love?</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/webp" href="../images/favicon.ico" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
     <script>
-      function hideLoader() {
-        document.getElementById("form-loader").style.display = "none";
-        document.getElementById("form-container").style.display = "block";
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
+      gtag("config", "G-7QWWK7C5L9");
     </script>
-    
+    <!-- End Google Analytics -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
 
-    <div>
-      <p class="high-contrast-text">
-        Note: By submitting your response, you consent to having your answers posted on
-        <a href="http://whatdoyouknowaboutlove.com" target="_blank" class="high-contrast-link">whatdoyouknowaboutlove.com</a> and
-        <a href="http://instagram.com/whatdoyouknowaboutlove/" target="_blank" class="high-contrast-link">instagram.com/whatdoyouknowaboutlove</a>
-      </p>
-      <p class="high-contrast-text">
-        Thank you for sharing your thoughts and experiences about love!
-      </p>
-      <p class="high-contrast-text">
-        Your suggestions are welcome. Contact: <a href="mailto:whatdoyouknowaboutlove@proton.me" class="high-contrast-link">whatdoyouknowaboutlove@proton.me</a>
-      </p>
-      <p class="high-contrast-text">
-        <strong>If you are having difficulty submitting the form, please follow this link:
-          <a href="https://forms.gle/yuuqEk9PWgUduQPJ6" target="_blank" class="high-contrast-link">https://forms.gle/yuuqEk9PWgUduQPJ6</a></strong>
-      </p>
-    </div>
+  <body id="top">
+    <!-- Header Section -->
+    <header class="container-fluid text-white pb-5">
+      <div
+        class="container-lg h-100 d-flex flex-column justify-content-between"
+      >
+        <nav class="d-flex flex-column flex-sm-row pt-4">
+          <a
+            href="/"
+            class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0"
+          >
+            <img
+              class="m-2 rounded-top rounded-bottom logo-image"
+              src="../images/logo60.webp"
+              alt="logo-Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect."
+            />
+          </a>
+          <button
+            class="navbar-toggler float-left position-absolute d-sm-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainNav"
+            aria-expanded="false"
+            aria-label="Toggle main navigation"
+          >
+            <div class="burger-container">
+              <span class="menu-label">Menu</span>
+              <svg
+                class="burger-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 6h18M3 12h18M3 18h18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="mainNav">
+            <ul
+              class="navbar-nav ml-auto flex-sm-row align-items-center font-weight-bold"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/about">ABOUT</a>
+              </li>
 
-    <div class="back-to-top-container mt-5">
-      <a href="#top" class="back-to-top">Back to Top</a>
-    </div>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/responses"
+                  >RESPONSES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/submit">SUBMIT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/viepaula"
+                  >PORTFOLIO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-  </main>
-
-  <!-- Footer Section -->
-  <footer class="container-fluid text-white pt-5 pb-4">
-    <div class="container-lg">
-      <div class="row align-items-center">
-        <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-          <a href="index.html">
-            <img class="m-2 rounded-top rounded-bottom logo-image" src="../images/logo60.webp" alt="logo- Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect.">
-          </a>
-        </div>
-        <div class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
-          <a href="https://www.instagram.com/whatdoyouknowaboutlove/" target="_blank" class="mx-2" aria-label="Instagram">
-            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/ThatsVie" target="_blank" class="mx-2" aria-label="GitHub">
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://venmo.com/whatdoyouknowaboutlove" target="_blank" class="mx-2" aria-label="Venmo">
-            <i class="fas fa-hand-holding-usd fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://donate.stripe.com/bIY2aCc186hG1xe5kk" target="_blank" class="mx-2" aria-label="Stripe">
-            <i class="fab fa-stripe fa-2x" aria-hidden="true"></i>
+        <div class="position-relative pt-4 pb-5">
+          <a href="/" class="no-underline">
+            <h1 class="text-center romanceText">
+              What Do You Know About Love?
+            </h1>
           </a>
         </div>
       </div>
-      <p class="footer-copyright text-center mb-0 footer-opacity">
-        Contact: <a href="mailto:whatdoyouknowaboutlove@proton.me">whatdoyouknowaboutlove@proton.me</a> <br>© 2025 What Do You Know About Love?
-      </p>
-    </div>
-  </footer>
+    </header>
 
-  <script src="../scripts.js"></script>
-</body>
+    <!-- Main Content Section -->
+    <main class="container">
+      <div class="google-sheet-container">
+        <h2 class="text-center text-white mb-5" tabindex="0">
+          Submit a Response
+        </h2>
 
+        <!-- Loader -->
+        <div id="form-loader" class="form-loader">
+          <div class="spinner"></div>
+          <p>Loading form...</p>
+        </div>
+
+        <!-- Google Form -->
+        <div id="form-container" style="display: none">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdJWRDQGB3w72Ni3hlIljfFhrowOEpHq2USUO0C2hpx1qAqzQ/viewform?embedded=true"
+            width="100%"
+            height="1300"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Google Form to submit responses"
+            onload="hideLoader()"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Script to Hide Loader -->
+      <script>
+        function hideLoader() {
+          document.getElementById("form-loader").style.display = "none";
+          document.getElementById("form-container").style.display = "block";
+        }
+      </script>
+
+      <div>
+        <p class="high-contrast-text">
+          Note: By submitting your response, you consent to having your answers
+          posted on
+          <a
+            href="http://whatdoyouknowaboutlove.com"
+            target="_blank"
+            class="high-contrast-link"
+            >whatdoyouknowaboutlove.com</a
+          >
+          and
+          <a
+            href="http://instagram.com/whatdoyouknowaboutlove/"
+            target="_blank"
+            class="high-contrast-link"
+            >instagram.com/whatdoyouknowaboutlove</a
+          >
+        </p>
+        <p class="high-contrast-text">
+          Thank you for sharing your thoughts and experiences about love!
+        </p>
+        <p class="high-contrast-text">
+          Your suggestions are welcome. Contact:
+          <a
+            href="mailto:whatdoyouknowaboutlove@proton.me"
+            class="high-contrast-link"
+            >whatdoyouknowaboutlove@proton.me</a
+          >
+        </p>
+        <p class="high-contrast-text">
+          <strong
+            >If you are having difficulty submitting the form, please follow
+            this link:
+            <a
+              href="https://forms.gle/yuuqEk9PWgUduQPJ6"
+              target="_blank"
+              class="high-contrast-link"
+              >https://forms.gle/yuuqEk9PWgUduQPJ6</a
+            ></strong
+          >
+        </p>
+      </div>
+
+      <div class="back-to-top-container mt-5">
+        <a href="#top" class="back-to-top">Back to Top</a>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid text-white pt-5 pb-4">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div
+            class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0"
+          >
+            <a href="index.html">
+              <img
+                class="m-2 rounded-top rounded-bottom logo-image"
+                src="../images/logo60.webp"
+                alt="logo- Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect."
+              />
+            </a>
+          </div>
+          <div
+            class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end"
+          >
+            <a
+              href="https://www.instagram.com/whatdoyouknowaboutlove/"
+              target="_blank"
+              class="mx-2"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://github.com/ThatsVie"
+              target="_blank"
+              class="mx-2"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://venmo.com/whatdoyouknowaboutlove"
+              target="_blank"
+              class="mx-2"
+              aria-label="Venmo"
+            >
+              <i class="fas fa-hand-holding-usd fa-2x" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://donate.stripe.com/bIY2aCc186hG1xe5kk"
+              target="_blank"
+              class="mx-2"
+              aria-label="Stripe"
+            >
+              <i class="fab fa-stripe fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer-copyright text-center mb-0 footer-opacity">
+          Contact:
+          <a href="mailto:whatdoyouknowaboutlove@proton.me"
+            >whatdoyouknowaboutlove@proton.me</a
+          >
+          <br />© 2025 What Do You Know About Love?
+        </p>
+      </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+  </body>
 </html>
