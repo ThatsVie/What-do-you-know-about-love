@@ -1,379 +1,600 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the many facets of love shared by people from all walks of life"
+    />
+    <title>What Do You Know About Love?</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/webp" href="images/favicon.ico" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore the many facets of love shared by people from all walks of life" />
-  <title>What Do You Know About Love?</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/webp" href="images/favicon.ico" />
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-7QWWK7C5L9");
+    </script>
+    <!-- End Google Analytics -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-7QWWK7C5L9");
-  </script>
-  <!-- End Google Analytics -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
-</head>
+  <body>
+    <!-- Header Section -->
+    <header class="container-fluid text-white pb-5">
+      <div
+        class="container-lg h-100 d-flex flex-column justify-content-between"
+      >
+        <nav class="d-flex flex-column flex-sm-row pt-4">
+          <a
+            href="/"
+            class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0"
+          >
+            <img
+              class="m-2 rounded-top rounded-bottom logo-image"
+              src="images/logo60.webp"
+              alt="logo-Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect."
+            />
+          </a>
+          <button
+            class="navbar-toggler float-left position-absolute d-sm-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainNav"
+            aria-expanded="false"
+            aria-label="Toggle main navigation"
+          >
+            <div class="burger-container">
+              <span class="menu-label">Menu</span>
+              <svg
+                class="burger-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 6h18M3 12h18M3 18h18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </button>
 
-<body>
-  <!-- Header Section -->
-  <header class="container-fluid text-white pb-5">
-    <div class="container-lg h-100 d-flex flex-column justify-content-between">
-      <nav class="d-flex flex-column flex-sm-row pt-4">
-        <a href="/" class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-          <img class="m-2 rounded-top rounded-bottom logo-image" src="images/logo60.webp" alt="logo-Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect." />
-        </a>
-        <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle main navigation">
-          <div class="burger-container">
-            <span class="menu-label">Menu</span>
-            <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+          <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="mainNav">
+            <ul
+              class="navbar-nav ml-auto flex-sm-row align-items-center font-weight-bold"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/about">ABOUT</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/responses"
+                  >RESPONSES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/submit">SUBMIT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-1" href="/viep">PORTFOLIO</a>
+              </li>
+            </ul>
           </div>
-        </button>
+        </nav>
 
-        <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="mainNav">
-          <ul class="navbar-nav ml-auto flex-sm-row align-items-center font-weight-bold">
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/about">ABOUT</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/responses">RESPONSES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/submit">SUBMIT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white mx-1" href="/viep">PORTFOLIO</a>
-            </li>
-          </ul>
+        <div class="position-relative pt-4 pb-5">
+          <a href="/" class="no-underline">
+            <h1 class="text-center romanceText">
+              What Do You Know About Love?
+            </h1>
+          </a>
         </div>
-      </nav>
-
-      <div class="position-relative pt-4 pb-5">
-        <a href="/" class="no-underline">
-          <h1 class="text-center romanceText">
-            What Do You Know About Love?
-          </h1>
-        </a>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-    <div id="about" class="about-container bg-light p-4 rounded shadow-sm">
-      <h2 class="text-center text-white mb-4 romanceText" tabindex="0">
-        Welcome!
-      </h2>
-      <p class="lead text-center">
-        <span class="romanceText">What Do You Know About Love?</span> is a
-        digital platform exploring the meaning of love through human
-        reflection and AI-generated imagery.
-        Through a simple form, contributors choose a thought-provoking question about love
-        and share their response. Each submission becomes a response card, paired with an AI-generated
-        image, forming a growing archive of love in all its forms.
-        We invite you to explore, reflect, and contribute. Every story
-        helps keep love alive, expanding its reach, deepening its meaning, and ensuring it endures.
-      </p>
-    </div>
-
-    <div class="text-center my-4">
-      <a href="https://instagram.com/whatdoyouknowaboutlove" class="btn btn-small-blue" target="_blank">Instagram</a>
-      <a href="/about" class="btn btn-small-blue">Learn More</a>
-      <a href="/responses" class="btn btn-small-blue">All Responses</a>
-      <a href="/submit" class="btn btn-small-blue">Submit a Response</a>
-    </div>
-
-    <div id="response-container" class="container">
-      <a href="responses.html" class="no-underline">
-        <h2 class="text-center text-white">
-          What You Have Told Us About Love
+    <main class="container">
+      <div id="about" class="about-container bg-light p-4 rounded shadow-sm">
+        <h2 class="text-center text-white mb-4 romanceText" tabindex="0">
+          Welcome!
         </h2>
-      </a>
-      <div id="response-cards" class="row">
-        <div id="answer-29" div class="response-card col-md-4 mt-4 answer-29" tabindex="0">
-          <div class="card border-0 shadow-sm h-100 bg-white">
-            <div class="card-body d-flex flex-column">
-              <img src="../images/sadtimes.webp" class="card-img-top img-fluid rounded-top" alt="A stylized illustration of a young woman sitting alone on the floor in a dimly lit room, holding her phone and looking contemplative. Heartbroken emojis and images are projected on the walls and floor, surrounding her, symbolizing the pain of heartbreak and the impact of digital connections. Soft blue and pink lighting creates a somber atmosphere, with houseplants nearby adding a subtle touch of life to the otherwise melancholy scene." style="object-fit: cover" />
-              <h3 class="card-title mt-3">
-                How has technology impacted your experience of love?
-              </h3>
-              <p class="card-text" data-full-text="Honestly, I Wish I Knew What It Was Like Before The Internet, Before Dating Apps And Social Media. I Know I'm Young But I Think Love Is A Mess And I've Lost Hope That I Will Ever Meet THE ONE. People Tell Me That Will Change But It’s Hard To Feel Really Connected To People. I Meet People On Apps And It’s Always About Sex Which Is Fine But After A While I Feel Used. Everyone I Meet Seems Okay At First But Within A Short Time I Find Out They Are Actually Unstable. We Post Pictures Of Our Best Moments But Really Everyone Is Suffering And None Of It Matters. I Feel Hopeless About The Future, I Can’t Imagine Having A Family. So I Think Technology Has Had A Negative Impact."></p>
-              <a href="#" class="read-more">Read More</a>
-              <p class="card-text text-bold-pink">
-                Tomoko, She/Her, 22, Queer, California
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div id="answer-7" class="response-card col-md-4 mt-4 answer-7" tabindex="0">
-          <div class="card border-0 shadow-sm h-100 bg-white">
-            <div class="card-body d-flex flex-column">
-              <img src="../images/sewingroom.webp" class="card-img-top img-fluid rounded-top" alt="An old-fashioned sewing room filled with vibrant fabric, spools of thread, and sewing tools. A vintage sewing machine sits on a wooden table with a dress form nearby, while colorful quilts and fabric rolls are neatly stacked on shelves. Sunlight streams through a window with lace curtains, creating a warm and nostalgic atmosphere." style="object-fit: cover" />
-              <h3 class="card-title mt-3">
-                What was your first experience of feeling loved?
-              </h3>
-              <p class="card-text" data-full-text="My first experience of feeling truly loved was by my grandma, who taught me how to sew. She was the first person who saw me for who I am, embracing my femininity without ever trying to change me. She patiently showed me how to make clothes, mend, measure, and work with different fabrics. Her sewing room was filled with colorful threads, needles, fabrics, and a dress form I loved playing with. It became my sanctuary. I make a living creating custom pieces for others and I honor her legacy by sharing that love with my clients. I talk about her every day and feel her love with me always."></p>
-              <a href="#" class="read-more">Read More</a>
-              <p class="card-text text-bold-pink">
-                Maleeka, She/Her, 39, Woman of Trans Experience, Dallas, TX
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div id="answer-21" class="response-card col-md-4 mt-4 answer-21" tabindex="0">
-          <div class="card border-0 shadow-sm h-100 bg-white">
-            <div class="card-body d-flex flex-column">
-              <img src="../images/ratlove.webp" class="card-img-top img-fluid rounded-top" alt="A vibrant illustration of a smiling man with tousled hair and sunglasses, wearing a brown jacket. He has two pet rats perched on his shoulders, both looking content. The background features geometric shapes and abstract designs in shades of pink and blue, adding a modern feel to the joyful scene." style="object-fit: cover" />
-              <h3 class="card-title mt-3">
-                How do you celebrate love in your daily life?
-              </h3>
-              <p class="card-text" data-full-text="I absolutely adore my rats. Taking care of them is a daily practice that brings me closer to understanding love. From feeding them nutritious meals to ensuring their environment is clean and stimulating, I take pride in every aspect of their care. Rats may have a short lifespan, but the love they offer is genuine and profound. Having these amazing companions has taught me so much about both grief and love. I celebrate love in my daily life by cherishing their presence and challenging the common misconceptions about rats. Many people don't realize how social and intelligent rats are. They form strong bonds, recognize their names, and enjoy interacting with me and each other. My daily routine of caring for them, playing with them, and appreciating their unique personalities is my way of honoring and celebrating the love we share. Love comes in many forms and I've found it in the companionship of my rats."></p>
-              <a href="#" class="read-more">Read More</a>
-              <p class="card-text text-bold-pink">Dylan T., 38</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="answer-9" class="response-card col-md-4 mt-4 answer-9" tabindex="0">
-          <div class="card border-0 shadow-sm h-100 bg-white">
-            <div class="card-body d-flex flex-column">
-              <img src="../images/boysinharlem.webp" class="card-img-top img-fluid rounded-top" alt="An illustration of three young boys, one white and two Black, standing on a Harlem street corner in the city. They are casually chatting, with one boy’s arm resting on the other's shoulder, symbolizing friendship and inclusion. The scene captures a vibrant city background with buildings, crosswalks, and street signs, giving it a nostalgic, warm feel." style="object-fit: cover" />
-              <h3 class="card-title mt-3">
-                How do you nurture love in long-term friendships?
-              </h3>
-              <p class="card-text" data-full-text="Growing up as a white boy in Harlem the Black kids never treated me differently. I felt like I belonged. Over time, life took us in different directions, and I saw a lot of the world, but we’ve stayed connected through phone calls over the years and now with social media. Recently, we started doing video calls more and I’ve found myself looking back at pictures of us as kids. It reminds me of the love and sense of belonging I felt then, and it keeps that love alive today. In many ways we’re still those little boys inside standing on the corner, connected by the bond we formed back then. It wasn't about where our families came from or what we looked like but where we were in the moment."></p>
-              <a href="#" class="read-more">Read More</a>
-              <p class="card-text text-bold-pink">
-                Justin, He/Him, 52, Father, Son, Husband, Musician, NYC
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div id="answer-8" div class="response-card col-md-4 mt-4 answer-8" tabindex="0">
-          <div class="card border-0 shadow-sm h-100 bg-white">
-            <div class="card-body d-flex flex-column">
-              <img src="../images/flawed.webp" class="card-img-top img-fluid rounded-top" alt="A symbolic illustration of a cracked ceramic vase with a glowing heart at its center. A delicate flower blooms from within the vase, surrounded by lush greenery and sparkling light effects. Broken shards rest at the base, emphasizing the theme of resilience and beauty emerging from imperfection." style="object-fit: cover" />
-              <h3 class="card-title mt-3">
-                What does unconditional love mean to you, and have you
-                experienced it?
-              </h3>
-              <p class="card-text" data-full-text="Unconditional love to me is, quite literally, loving without conditions. That means knowing and accepting the entire person, even with all of their faults or mistakes. It means you won't give up on them or stop loving them no matter what, because we are all humans, and we all have our flaws and make mistakes. I have experienced it and I experience it now, with my partner. Even though he has seen me at my absolute lowest, he accepts it, seeks to understand it, empathizes with me, and loves me anyway."></p>
-              <a href="#" class="read-more">Read More</a>
-              <p class="card-text text-bold-pink">
-                Courtney, 33, Cis Female, Tulsa, OK
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div id="answer-18" class="response-card col-md-4 mt-4 answer-18" tabindex="0">
-          <div class="card border-0 shadow-sm h-100 bg-white">
-            <div class="card-body d-flex flex-column">
-              <img src="../images/friends2.webp" class="card-img-top img-fluid rounded-top" alt="A supportive group of  diverse friends surrounding a seated woman. The friends, some wearing masks and dressed in shades of pink, blue, brown, and white, gently place their hands on the woman's shoulders, offering comfort and care. The scene is warm and empathetic, with the friends showing love and solidarity during a difficult time" style="object-fit: cover" />
-              <h3 class="card-title mt-3">
-                How has being loved helped you through difficult times?
-              </h3>
-              <p class="card-text" data-full-text="Love helped me through my most difficult time I was struggling with mental health and became a danger to my self and the people around me . And my new friends who were strangers at the time listened to my sorrows visited me in the hospital checked in on me showed me what true love really meant they loved on me speaking positive affirmations on and over my life until I was strong enough to do it on my own . Love is patient love is kind . Love does not judge .  The friends that I have love me unconditionally.  Flaws and all that what brings us together our differences."></p>
-              <a href="#" class="read-more">Read More</a>
-              <p class="card-text text-bold-pink">
-                Kieana, She/Her, 32, Harlem, NYC
-              </p>
-            </div>
-          </div>
-        </div>
+        <p class="lead text-center">
+          <span class="romanceText">What Do You Know About Love?</span> is a
+          digital platform exploring the meaning of love through human
+          reflection and AI-generated imagery. Through a simple form,
+          contributors choose a thought-provoking question about love and share
+          their response. Each submission is formatted into a response card, paired with
+          an AI-generated image, forming a growing archive of love in all its
+          forms. We invite you to explore, reflect, and contribute. Every story
+          helps keep love alive, expanding its reach, deepening its meaning, and
+          ensuring it endures.
+        </p>
       </div>
-    </div>
 
-    <div class="text-center my-4">
-      <a href="/responses" class="btn btn-small-blue">See All Responses</a>
-      <a href="/responses#questions-section" class="btn btn-small-blue">See All Questions</a>
-    </div>
+      <div class="text-center my-4">
+        <a
+          href="https://instagram.com/whatdoyouknowaboutlove"
+          class="btn btn-small-blue"
+          target="_blank"
+          >Instagram</a
+        >
+        <a href="/about" class="btn btn-small-blue">Learn More</a>
+        <a href="/responses" class="btn btn-small-blue">All Responses</a>
+        <a href="/submit" class="btn btn-small-blue">Submit a Response</a>
+      </div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials-section" class="bg-white p-4 rounded shadow-sm my-5">
-      <h2 class="text-center text-white mb-5 romanceText" tabindex="0">
-        What People Are Saying
-      </h2>
-      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <!-- First Carousel Item -->
-          <div class="carousel-item active">
-            <div class="row align-items-center">
-              <div class="col-md-2 text-center">
-                <img src="images/lesbians.webp" class="rounded-circle testimonial-img" alt="Illustration of two women embracing, one with a shaved head and the other with curly hair. The background features shades of pink, blue, and tan" />
-              </div>
-              <div class="col-md-10">
-                <blockquote class="blockquote">
-                  <p class="mb-2">
-                    My wife and I see a bright future for this project. The
-                    questions are thought provoking and great fodder for
-                    conversation. The site is beautifully presented. We've
-                    enjoyed exploring the different responses and believe that
-                    this platform will make a significant positive impact.
-                  </p>
-                  <p class="text-bold-pink">
-                    Imani She/Her, 42, Married Lesbian, Lenapehoking
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Carousel Item -->
-          <div class="carousel-item">
-            <div class="row align-items-center">
-              <div class="col-md-2 text-center">
-                <img src="images/pinkbluelocs.webp" class="rounded-circle testimonial-img" alt="A stylish individual with medium-length locs in shades of pink and blue, wearing round sunglasses and a pink shirt. The background features a serene outdoor setting with trees and soft lighting, creating a calm and confident atmosphere. " />
-              </div>
-              <div class="col-md-10">
-                <blockquote class="blockquote">
-                  <p class="mb-2">
-                    I see you with this website, Vie! I read all the responses
-                    during a layover and it gave me so much to think about.
-                    I’m going to use the questions as journal prompts. Thank
-                    you for creating this platform!
-                  </p>
-                  <p class="text-bold-pink">
-                    Joi They/Them, 29, Queer, Brooklyn,NY
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third Carousel Item -->
-          <div class="carousel-item">
-            <div class="row align-items-center">
-              <div class="col-md-2 text-center">
-                <img src="images/momanddaughter2.webp" class="rounded-circle testimonial-img" alt="Illustration of a mother and daughter embracing outdoors. The mother has short dark hair and is wearing a pink sweater, while the daughter has long brown hair and is wearing a white top with blue overalls. The background features a serene landscape with trees, hills, and a partly cloudy sky." />
-              </div>
-              <div class="col-md-10">
-                <blockquote class="blockquote">
-                  <p class="mb-2">
-                    My daughter told me about this site, and I've found it
-                    incredibly healing to read through people's responses. The
-                    shared experiences have brought me a sense of connection.
-                    This site is a beautiful reminder of the power of
-                    community and love.
-                  </p>
-                  <p class="text-bold-pink">Carolina, 45, NM</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fourth Carousel Item -->
-          <div class="carousel-item">
-            <div class="row align-items-center">
-              <div class="col-md-2 text-center">
-                <img src="images/redhair2.webp" class="rounded-circle testimonial-img" alt="Illustration of a woman with shoulder-length red hair and striking blue eyes. She is wearing a white blouse and a pink blazer, standing in a modern, brightly lit office environment." />
-              </div>
-              <div class="col-md-10">
-                <blockquote class="blockquote">
-                  <p class="mb-2">
-                    I appreciate the diversity of the images and the responses
-                    featured on this site. It's refreshing to see such a broad
-                    range of experiences and perspectives on love.
-                  </p>
-                  <p class="text-bold-pink">Rachel She/Her, 26</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fifth Carousel Item -->
-          <div class="carousel-item">
-            <div class="row align-items-center">
-              <div class="col-md-2 text-center">
-                <img src="images/whitehair.webp" class="rounded-circle testimonial-img" alt="Illustration of a young person with white hair, wearing a beige coat and a pastel pink sweater, standing outdoors with a scenic background of trees, hills, and a sunset sky" />
-              </div>
-              <div class="col-md-10">
-                <blockquote class="blockquote">
-                  <p class="mb-2">
-                    I found it valuable to reflect on these questions and read
-                    the responses. It has been an enriching experience.
-                  </p>
-                  <p class="text-bold-pink">
-                    Matthew He/They, 32, Gray Ace Trans Masculine, CA
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+      <div id="response-container" class="container">
+        <a href="responses.html" class="no-underline">
+          <h2 class="text-center text-white">
+            What You Have Told Us About Love
+          </h2>
         </a>
-        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div id="response-cards" class="row">
+          <div
+            id="answer-7"
+            class="response-card col-md-4 mt-4 answer-7"
+            tabindex="0"
+          >
+            <div class="card border-0 shadow-sm h-100 bg-white">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="../images/sewingroom.webp"
+                  class="card-img-top img-fluid rounded-top"
+                  alt="An old-fashioned sewing room filled with vibrant fabric, spools of thread, and sewing tools. A vintage sewing machine sits on a wooden table with a dress form nearby, while colorful quilts and fabric rolls are neatly stacked on shelves. Sunlight streams through a window with lace curtains, creating a warm and nostalgic atmosphere."
+                  style="object-fit: cover"
+                />
+                <h3 class="card-title mt-3">
+                  What was your first experience of feeling loved?
+                </h3>
+                <p
+                  class="card-text"
+                  data-full-text="My first experience of feeling truly loved was by my grandma, who taught me how to sew. She was the first person who saw me for who I am, embracing my femininity without ever trying to change me. She patiently showed me how to make clothes, mend, measure, and work with different fabrics. Her sewing room was filled with colorful threads, needles, fabrics, and a dress form I loved playing with. It became my sanctuary. I make a living creating custom pieces for others and I honor her legacy by sharing that love with my clients. I talk about her every day and feel her love with me always."
+                ></p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="card-text text-bold-pink">
+                  Maleeka, She/Her, 39, Woman of Trans Experience, Dallas, TX
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="answer-29"
+            div
+            class="response-card col-md-4 mt-4 answer-29"
+            tabindex="0"
+          >
+            <div class="card border-0 shadow-sm h-100 bg-white">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="../images/sadtimes.webp"
+                  class="card-img-top img-fluid rounded-top"
+                  alt="A stylized illustration of a young woman sitting alone on the floor in a dimly lit room, holding her phone and looking contemplative. Heartbroken emojis and images are projected on the walls and floor, surrounding her, symbolizing the pain of heartbreak and the impact of digital connections. Soft blue and pink lighting creates a somber atmosphere, with houseplants nearby adding a subtle touch of life to the otherwise melancholy scene."
+                  style="object-fit: cover"
+                />
+                <h3 class="card-title mt-3">
+                  How has technology impacted your experience of love?
+                </h3>
+                <p
+                  class="card-text"
+                  data-full-text="Honestly, I Wish I Knew What It Was Like Before The Internet, Before Dating Apps And Social Media. I Know I'm Young But I Think Love Is A Mess And I've Lost Hope That I Will Ever Meet THE ONE. People Tell Me That Will Change But It’s Hard To Feel Really Connected To People. I Meet People On Apps And It’s Always About Sex Which Is Fine But After A While I Feel Used. Everyone I Meet Seems Okay At First But Within A Short Time I Find Out They Are Actually Unstable. We Post Pictures Of Our Best Moments But Really Everyone Is Suffering And None Of It Matters. I Feel Hopeless About The Future, I Can’t Imagine Having A Family. So I Think Technology Has Had A Negative Impact."
+                ></p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="card-text text-bold-pink">
+                  Tomoko, She/Her, 22, Queer, California
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="answer-21"
+            class="response-card col-md-4 mt-4 answer-21"
+            tabindex="0"
+          >
+            <div class="card border-0 shadow-sm h-100 bg-white">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="../images/ratlove.webp"
+                  class="card-img-top img-fluid rounded-top"
+                  alt="A vibrant illustration of a smiling man with tousled hair and sunglasses, wearing a brown jacket. He has two pet rats perched on his shoulders, both looking content. The background features geometric shapes and abstract designs in shades of pink and blue, adding a modern feel to the joyful scene."
+                  style="object-fit: cover"
+                />
+                <h3 class="card-title mt-3">
+                  How do you celebrate love in your daily life?
+                </h3>
+                <p
+                  class="card-text"
+                  data-full-text="I absolutely adore my rats. Taking care of them is a daily practice that brings me closer to understanding love. From feeding them nutritious meals to ensuring their environment is clean and stimulating, I take pride in every aspect of their care. Rats may have a short lifespan, but the love they offer is genuine and profound. Having these amazing companions has taught me so much about both grief and love. I celebrate love in my daily life by cherishing their presence and challenging the common misconceptions about rats. Many people don't realize how social and intelligent rats are. They form strong bonds, recognize their names, and enjoy interacting with me and each other. My daily routine of caring for them, playing with them, and appreciating their unique personalities is my way of honoring and celebrating the love we share. Love comes in many forms and I've found it in the companionship of my rats."
+                ></p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="card-text text-bold-pink">Dylan T., 38</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="answer-2"
+            class="response-card col-md-4 mt-4 answer-2"
+            tabindex="0"
+          >
+            <div class="card border-0 shadow-sm h-100 bg-white">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="../images/blackandbeautiful.webp"
+                  class="card-img-top img-fluid rounded-top"
+                  alt="A stylized illustration of a large Black man and a Black woman sitting happily on the beach. Both are wearing swimwear, with the man shirtless and the woman in a swimsuit. They are smiling and enjoying each other's company as the sun sets in the background, casting a warm, serene glow over the ocean. The image conveys a sense of relaxation, love, and body positivity."
+                  style="object-fit: cover"
+                />
+                <h3 class="card-title mt-3">
+                  When have you felt the most loved?
+                </h3>
+                <p
+                  class="card-text"
+                  data-full-text="I felt the most loved last weekend at the beach with my wife. It was a day that started like many others, with my usual reluctance to take off my shirt and expose my chest. For years I've struggled with feeling comfortable in my own skin, especially because of my size. But my wife, my incredible partner, reminded me just how much she loves every part of me. She told me how safe and protected she feels with me because of my size, how handsome I am, and how much she loves our life together. Her words were like a balm to my soul, soothing the insecurities that have plagued me for so long. The beach itself held a special significance that day. My grandmother, who passed away recently, had always been afraid of water. I thought about her and also about my brother, who drowned when we were kids. Standing by the water, I felt a profound connection to my ancestors who perished in the ocean's depths. In my grief for my grandmother and the memories of my brother, I felt an overwhelming surge of God's love. Despite all the pain and suffering in the world, I feel blessed to be alive, to have a loving home, a devoted wife, and a strong body that has carried me through so much. It was in that moment, surrounded by the vastness of the ocean, the greatness of God, and the warmth of my wife's love, that I truly felt the most loved."
+                ></p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="card-text text-bold-pink flex-grow-1">
+                  Robert, He/Him, Black Straight Married Man, Florida
+                </p>
+                <div class="tags visually-hidden">
+                  <span class="tag">body positivity</span>
+                  <span class="tag">ancestors</span>
+                  <span class="tag">grief</span>
+                  <span class="tag">divine</span>
+                  <span class="tag">gratitude</span>
+                  <span class="tag">men</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="answer-30"
+            div
+            class="response-card col-md-4 mt-4 answer-30"
+            tabindex="0"
+          >
+            <div class="card border-0 shadow-sm h-100 bg-white">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="../images/splitfigure.webp"
+                  class="card-img-top img-fluid rounded-top"
+                  alt="An abstract illustration of a human figure standing in the center, with swirling patterns in shades of pink, blue, tan, and brown radiating around them, symbolizing inner conflict and personal growth."
+                  style="object-fit: cover"
+                />
+                <h3 class="card-title mt-3">
+                  How do cultural or societal norms influence your understanding
+                  of love?
+                </h3>
+                <p
+                  class="card-text"
+                  data-full-text="Cultural and societal norms have played a significant role in shaping my understanding of love, often leading to an internal conflict between my heritage and personal experiences. In my Vietnamese family, respect for elders and family loyalty are seen as fundamental expressions of love. These deeply ingrained traditions sometimes clash with my own views and experiences of love, creating a struggle to balance cultural expectations with my individuality. This conflict has made my journey in understanding love more complex. I strive to honor my cultural values, but I also find myself navigating the tension between adhering to tradition and forging my unique path in expressing love."
+                ></p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="card-text text-bold-pink">Sam N, 32, In the closet</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="answer-18"
+            class="response-card col-md-4 mt-4 answer-18"
+            tabindex="0"
+          >
+            <div class="card border-0 shadow-sm h-100 bg-white">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="../images/friends2.webp"
+                  class="card-img-top img-fluid rounded-top"
+                  alt="A supportive group of  diverse friends surrounding a seated woman. The friends, some wearing masks and dressed in shades of pink, blue, brown, and white, gently place their hands on the woman's shoulders, offering comfort and care. The scene is warm and empathetic, with the friends showing love and solidarity during a difficult time"
+                  style="object-fit: cover"
+                />
+                <h3 class="card-title mt-3">
+                  How has being loved helped you through difficult times?
+                </h3>
+                <p
+                  class="card-text"
+                  data-full-text="Love helped me through my most difficult time I was struggling with mental health and became a danger to my self and the people around me . And my new friends who were strangers at the time listened to my sorrows visited me in the hospital checked in on me showed me what true love really meant they loved on me speaking positive affirmations on and over my life until I was strong enough to do it on my own . Love is patient love is kind . Love does not judge .  The friends that I have love me unconditionally.  Flaws and all that what brings us together our differences."
+                ></p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="card-text text-bold-pink">
+                  Kieana, She/Her, 32, Harlem, NYC
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <div class="back-to-top-container mt-5">
-      <a href="#top" class="back-to-top">Back to Top</a>
-    </div>
-  </main>
+      <div class="text-center my-4">
+        <a href="/responses" class="btn btn-small-blue">See All Responses</a>
+        <a href="/responses#questions-section" class="btn btn-small-blue"
+          >See All Questions</a
+        >
+      </div>
 
-  <!-- Footer Section -->
-  <footer class="container-fluid text-white pt-5 pb-4">
-    <div class="container-lg">
-      <div class="row align-items-center">
-        <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0">
-          <a href="index.html">
-            <img class="m-2 rounded-top rounded-bottom logo-image" src="images/logo60.webp" alt="Logo - Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect." />
+      <!-- Testimonials Section -->
+      <section
+        id="testimonials-section"
+        class="bg-white p-4 rounded shadow-sm my-5"
+      >
+        <h2 class="text-center text-white mb-5 romanceText" tabindex="0">
+          What People Are Saying
+        </h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- First Carousel Item -->
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                  <img
+                    src="images/lesbians.webp"
+                    class="rounded-circle testimonial-img"
+                    alt="Illustration of two women embracing, one with a shaved head and the other with curly hair. The background features shades of pink, blue, and tan"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <blockquote class="blockquote">
+                    <p class="mb-2">
+                      My wife and I see a bright future for this project. The
+                      questions are thought provoking and great fodder for
+                      conversation. The site is beautifully presented. We've
+                      enjoyed exploring the different responses and believe that
+                      this platform will make a significant positive impact.
+                    </p>
+                    <p class="text-bold-pink">
+                      Imani She/Her, 42, Married Lesbian, Lenapehoking
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Carousel Item -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                  <img
+                    src="images/pinkbluelocs.webp"
+                    class="rounded-circle testimonial-img"
+                    alt="A stylish individual with medium-length locs in shades of pink and blue, wearing round sunglasses and a pink shirt. The background features a serene outdoor setting with trees and soft lighting, creating a calm and confident atmosphere. "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <blockquote class="blockquote">
+                    <p class="mb-2">
+                      I see you with this website, Vie! I read all the responses
+                      during a layover and it gave me so much to think about.
+                      I’m going to use the questions as journal prompts. Thank
+                      you for creating this platform!
+                    </p>
+                    <p class="text-bold-pink">
+                      Joi They/Them, 29, Queer, Brooklyn,NY
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Carousel Item -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                  <img
+                    src="images/momanddaughter2.webp"
+                    class="rounded-circle testimonial-img"
+                    alt="Illustration of a mother and daughter embracing outdoors. The mother has short dark hair and is wearing a pink sweater, while the daughter has long brown hair and is wearing a white top with blue overalls. The background features a serene landscape with trees, hills, and a partly cloudy sky."
+                  />
+                </div>
+                <div class="col-md-10">
+                  <blockquote class="blockquote">
+                    <p class="mb-2">
+                      My daughter told me about this site, and I've found it
+                      incredibly healing to read through people's responses. The
+                      shared experiences have brought me a sense of connection.
+                      This site is a beautiful reminder of the power of
+                      community and love.
+                    </p>
+                    <p class="text-bold-pink">Carolina, 45, NM</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fourth Carousel Item -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                  <img
+                    src="images/redhair2.webp"
+                    class="rounded-circle testimonial-img"
+                    alt="Illustration of a woman with shoulder-length red hair and striking blue eyes. She is wearing a white blouse and a pink blazer, standing in a modern, brightly lit office environment."
+                  />
+                </div>
+                <div class="col-md-10">
+                  <blockquote class="blockquote">
+                    <p class="mb-2">
+                      I appreciate the diversity of the images and the responses
+                      featured on this site. It's refreshing to see such a broad
+                      range of experiences and perspectives on love.
+                    </p>
+                    <p class="text-bold-pink">Rachel She/Her, 26</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fifth Carousel Item -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                  <img
+                    src="images/whitehair.webp"
+                    class="rounded-circle testimonial-img"
+                    alt="Illustration of a young person with white hair, wearing a beige coat and a pastel pink sweater, standing outdoors with a scenic background of trees, hills, and a sunset sky"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <blockquote class="blockquote">
+                    <p class="mb-2">
+                      I found it valuable to reflect on these questions and read
+                      the responses. It has been an enriching experience.
+                    </p>
+                    <p class="text-bold-pink">
+                      Matthew He/They, 32, Gray Ace Trans Masculine, CA
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <a
+            class="carousel-control-prev"
+            href="#testimonialCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#testimonialCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
-          <a href="https://www.instagram.com/whatdoyouknowaboutlove/" target="_blank" class="mx-2" aria-label="Instagram">
-            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/ThatsVie" target="_blank" class="mx-2" aria-label="GitHub">
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://venmo.com/whatdoyouknowaboutlove" target="_blank" class="mx-2" aria-label="Venmo">
-            <i class="fas fa-hand-holding-usd fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://donate.stripe.com/bIY2aCc186hG1xe5kk" target="_blank" class="mx-2" aria-label="Stripe">
-            <i class="fab fa-stripe fa-2x" aria-hidden="true"></i>
-          </a>
-        </div>
+      </section>
+
+      <div class="back-to-top-container mt-5">
+        <a href="#top" class="back-to-top">Back to Top</a>
       </div>
-      <p class="footer-copyright text-center mb-0 footer-opacity">
-        Contact:
-        <a href="mailto:whatdoyouknowaboutlove@proton.me">whatdoyouknowaboutlove@proton.me</a>
-        <br />© 2025 What Do You Know About Love?
-      </p>
-    </div>
-  </footer>
+    </main>
 
-  <script src="scripts.js"></script>
-</body>
+    <!-- Footer Section -->
+    <footer class="container-fluid text-white pt-5 pb-4">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div
+            class="d-flex align-items-center flex-column flex-sm-row col-sm-6 justify-content-center justify-content-sm-start mb-3 mb-sm-0"
+          >
+            <a href="index.html">
+              <img
+                class="m-2 rounded-top rounded-bottom logo-image"
+                src="images/logo60.webp"
+                alt="Logo - Stylized illustration of a heart and question mark intertwined, featuring a color scheme of shades of blue, pink, tan, and white. The design uses spiral lines to create a three-dimensional effect."
+              />
+            </a>
+          </div>
+          <div
+            class="footer-social col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end"
+          >
+            <a
+              href="https://www.instagram.com/whatdoyouknowaboutlove/"
+              target="_blank"
+              class="mx-2"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://github.com/ThatsVie"
+              target="_blank"
+              class="mx-2"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://venmo.com/whatdoyouknowaboutlove"
+              target="_blank"
+              class="mx-2"
+              aria-label="Venmo"
+            >
+              <i class="fas fa-hand-holding-usd fa-2x" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://donate.stripe.com/bIY2aCc186hG1xe5kk"
+              target="_blank"
+              class="mx-2"
+              aria-label="Stripe"
+            >
+              <i class="fab fa-stripe fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer-copyright text-center mb-0 footer-opacity">
+          Contact:
+          <a href="mailto:whatdoyouknowaboutlove@proton.me"
+            >whatdoyouknowaboutlove@proton.me</a
+          >
+          <br />© 2025 What Do You Know About Love?
+        </p>
+      </div>
+    </footer>
 
+    <script src="scripts.js"></script>
+  </body>
 </html>
