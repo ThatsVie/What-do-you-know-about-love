@@ -2,7 +2,8 @@
 
 # 🌐 **[What Do You Know About Love?](https://whatdoyouknowaboutlove.com/)**
 
-![whatdoyouknowaboutlove com](https://github.com/user-attachments/assets/3dc81a19-d394-4d72-97cc-178fbfcdd4fa)
+![whatdoyouknowaboutlove](https://github.com/user-attachments/assets/9f6ed989-c3ef-47df-b9a0-7bfa3362d90f)
+
 
 </div>
 
