@@ -124,4 +124,4 @@ I approach technology with a focus on connection, accessibility, and care. This 
 
 With love,
 <br>
-**[Vie P.](https://whatdoyouknowaboutlove.com/viepaula/)**
+**[Vie P.](https://whatdoyouknowaboutlove.com/viep)**
