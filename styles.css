@@ -802,3 +802,76 @@ footer a:hover {
     transform: rotate(360deg);
   }
 }
+
+/* Closure Banner Styles */
+.closure-banner {
+  width: 100%;
+  background-color: #fff3cd;
+  color: #856404;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 2px solid #ffeeba;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.closure-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  animation: marquee 15s linear infinite;
+  color: #856404;
+  text-decoration: none;
+}
+.closure-link:hover {
+  background-color: var(--color-bold-blue);
+  color: var(--color-light-pink);
+  border-radius: 4px;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+body {
+  padding-top: 100px;
+}
+
+
+.text-light-gray {
+  color: #555 !important; 
+}
+
+
+a {
+  color: #004080; 
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #001f4d;
+  text-decoration: none;
+}
+
+
+.text-muted a,
+.small a {
+  color: #005599;
+  text-decoration: underline;
+}
+
+.text-muted a:hover,
+.small a:hover {
+  color: #003366;
+  text-decoration: none;
+}
+
+.romanceText.text-white {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
